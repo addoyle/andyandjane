@@ -1,0 +1,22 @@
+{
+  "name": "andyandjane",
+  "description": "Andy and Jane's wedding website",
+  "main": "index.js",
+  "authors": [
+    "Andy (andy.d.doyle@gmail.com)"
+  ],
+  "license": "ISC",
+  "homepage": "https://andy-and-jane.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
