@@ -1,0 +1,23 @@
+footer
+  .color-overlay
+    .container
+      .row
+        .col-sm-12.text-center
+          span.footer-logo= Andy & Jane
+        .col-sm-offset-3.col-sm-6
+          each social in socials
+            a(href=social.href).wow.animated.rollIn
+              i.fa(class='fa-' + social.type)
+      .row
+        .col-sm-12.text-center
+          ul.nav.nav-pills
+            each nav in footerNavs
+              li(role='presentation')
+                a(href=nav.href)=nav.name.toUpperCase()
+        .col-sm-12.text-center
+          p.copyright
+            i.fa.fa-copyright
+            | 2017 Andy&amp;Jane
+    #go-to-top
+      a(href='#banner')
+        i.fa.fa-angle-up

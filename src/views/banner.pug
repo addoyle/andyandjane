@@ -1,0 +1,22 @@
+header#banner.banner
+  .wrapper
+    #carousel
+      #background-carousel
+        #myCarousel.carousel.slide(data-ride='carousel')
+          .carousel-inner
+            .item.item-no1.active
+            .item.item-no2
+            .item.item-no3
+    .container
+      .row
+        .col-sm-12.text-center
+          span.banner-logo
+            h2 Andy
+              span.amp
+              | Jane
+              small are getting married
+      .row
+        .col-sm-offset-3.col-sm-7
+          .timing
+            #count-down-2(style={height:'140px'}, data-date=weddingDate.format('YYYY-MM-DD HH:mm:ss'))
+    .color-overlay-bg

@@ -1,0 +1,56 @@
+{
+  "weddingDate": "2017-09-02 18:00:00",
+  "styles": [
+    "preloader.css",
+    "style.css",
+    "custom-style.css",
+    "responsive.css",
+    "http://fonts.googleapis.com/css?family=PT+Sans:400,700|Lobster"
+  ],
+  "scripts": [
+    "https://maps.googleapis.com/maps/api/js",
+    "script.js",
+    "maps.js"
+  ],
+  "bower_components": [
+    "jquery",
+    "bootstrap",
+    "jquery.selectbox",
+    "font-awesome",
+    "animate.css",
+    "magnific-popup",
+    "timecircles",
+    "imagesloaded",
+    "smoothscroll",
+    "wow",
+    "jquery.localScroll",
+    "jquery.placeholder",
+    "jquery.scrollTo",
+    "jquery.sticky",
+    "masonry",
+    "jQuery-One-Page-Nav",
+    "ajaxchimp"
+  ],
+  "navs": [
+    { "name": "Home", "href": "#banner" },
+    { "name": "Couple", "href": "#couple" },
+    { "name": "story", "href": "#story" },
+    { "name": "People", "href": "#people" },
+    { "name": "Event", "href": "#event" },
+    { "name": "Gift", "href": "#gift" },
+    { "name": "Gallery", "href": "#gallery" },
+    { "name": "Blog", "href": "#blog" },
+    { "name": "RSVP", "href": "#contact" }
+  ],
+  "footerNavs": [
+    { "name": "Home", "href": "#banner" },
+    { "name": "Gallery", "href": "#gallery" },
+    { "name": "Blog", "href": "#blog" },
+    { "name": "RSVP", "href": "#contact" }
+  ],
+  "socials": [
+    { "type": "facebook", "href": "facebook.com" },
+    { "type": "twitter", "href": "twitter.com" },
+    { "type": "instagram", "href": "instagram.com" }
+  ]
+}

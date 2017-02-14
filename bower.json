@@ -17,6 +17,22 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^3.1.1"
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "jquery.selectbox": "*",
+    "font-awesome": "fontawesome#^4.7.0",
+    "animate.css": "^3.5.2",
+    "magnific-popup": "^1.1.0",
+    "timecircles": "^1.5.3",
+    "imagesloaded": "^4.1.1",
+    "smoothscroll": "^0.3.4",
+    "wow": "^1.1.2",
+    "jquery.localScroll": "^1.4.0",
+    "jquery.placeholder": "^0.2.4",
+    "jquery.scrollTo": "^2.1.2",
+    "jquery.sticky": "^1.0.0",
+    "masonry": "^4.1.1",
+    "jQuery-One-Page-Nav": "^3.0.0",
+    "ajaxchimp": "^1.3.0"
   }
 }

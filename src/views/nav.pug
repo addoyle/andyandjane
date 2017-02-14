@@ -1,0 +1,28 @@
+section#sticker.nav-block
+  nav.navbar.navbar-default(role='navigation')
+    .container
+      .row
+        .col-sm-2
+          //- Brand and toggle get grouped for better mobile display
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            h1.nav-logo
+              a.nav-brand(href='/')
+                img(src='/assets/images/icon/logo.png', alt='BrandLogo')
+        .col-sm-8.text-center
+          //- Collect the nav toggling
+          .collase.navbar-collapse#navbar
+            ul.nav.navbar-nav
+              each nav in navs
+                li
+                  a(href=nav.href)=nav.name
+        .col-sm-2.mobile-pos
+          ul.social-icon.pull-right
+            each social in socials
+              li
+                a(href=social.href)
+                  i.fa(class='fa-' + social.type)
