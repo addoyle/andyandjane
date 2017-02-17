@@ -1,0 +1,22 @@
+section#story.story.lightsmoke
+  .container
+    .row
+      .col-sm-12.text-center
+        .heading.wow.animated.fadeInUp
+          h3 Our Love Story
+          p The story of Andy and Jane
+    .row
+      .col-sm-12
+        .timeline-block-content
+          each story in stories
+            .row
+              .col-sm-4
+                .timeline-head.wow.animated.fadeInLeft(data-wow-delay='0s', data-wow-duration='1s')
+                  h4= story.title
+              .col-sm-8
+                span.love-v-sign
+                span.timeline-meta.pull-right= story.date.format('do [of] MMMM, YYYY')
+                .timeline-left-content.pull-right.wow.animated.fadeInRight(data-wow-delay='0s', data-wow-duration='1s')
+                  .timeline-block-left
+                    img.img-responsive(src=imgpath + story.img, alt=story.alt)
+                  .timeline-body= story.body

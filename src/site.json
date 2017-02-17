@@ -1,4 +1,5 @@
 {
+  "imgpath": "/assets/images/",
   "weddingDate": "2017-09-02 18:00:00",
   "styles": [
     "preloader.css",
@@ -12,25 +13,6 @@
     "script.js",
     "maps.js"
   ],
-  "bower_components": [
-    "jquery",
-    "bootstrap",
-    "jquery.selectbox",
-    "font-awesome",
-    "animate.css",
-    "magnific-popup",
-    "timecircles",
-    "imagesloaded",
-    "smoothscroll",
-    "wow",
-    "jquery.localScroll",
-    "jquery.placeholder",
-    "jquery.scrollTo",
-    "jquery.sticky",
-    "masonry",
-    "jQuery-One-Page-Nav",
-    "ajaxchimp"
-  ],
   "navs": [
     { "name": "Home", "href": "#banner" },
     { "name": "Couple", "href": "#couple" },
@@ -42,6 +24,31 @@
     { "name": "Blog", "href": "#blog" },
     { "name": "RSVP", "href": "#contact" }
   ],
+  "banner": {
+    "carousel": [
+      {
+        "src": "slider/snakes.jpg",
+        "classes": "bg-v-bottom"
+      },
+      {"src": "slider/dogs.jpg"},
+      {"src": "slider/parrots.jpg"}
+    ]
+  },
+  "stories": [
+    {
+      "title": "How we first met",
+      "date": "2005-08-29",
+      "body": "First day of college at UMBC",
+      "img": "first_met.jpg",
+      "alt": "First day of UMBC"
+    }
+  ],
+  "rsvpLink": {
+    "img": "slider/dogs.jpg",
+    "desc": "We want you to be there! Don't be late!",
+    "contactLink": "#contact",
+    "mapLink": "#map"
+  },
   "footerNavs": [
     { "name": "Home", "href": "#banner" },
     { "name": "Gallery", "href": "#gallery" },
@@ -52,5 +59,23 @@
     { "type": "facebook", "href": "facebook.com" },
     { "type": "twitter", "href": "twitter.com" },
     { "type": "instagram", "href": "instagram.com" }
-  ]
+  ],
+  "groom": {
+    "name": "Andrew Doyle",
+    "img": "groom.png",
+    "socials": [
+      { "type": "facebook", "href": "facebook.com" },
+      { "type": "twitter", "href": "twitter.com" },
+      { "type": "instagram", "href": "instagram.com" }
+    ]
+  },
+  "bride": {
+    "name": "Jane Marlow",
+    "img": "bride.png",
+    "socials": [
+      { "type": "facebook", "href": "facebook.com" },
+      { "type": "twitter", "href": "twitter.com" },
+      { "type": "instagram", "href": "instagram.com" }
+    ]
+  }
 }

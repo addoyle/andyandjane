@@ -52,6 +52,7 @@ Index
     border-radius: 20px 20px 0px 0px;
     display: block;
     padding: 10px 0px;
+    margin-bottom: 0;
 }
 
 .timing .time_circles > div > h4[style] {
@@ -70,6 +71,16 @@ Index
     text-transform: uppercase;
 }
 
+.bg-v-bottom {
+  background-position-y: bottom;
+}
+.bg-v-top {
+  background-position-y: top;
+}
+.bg-v-center {
+  background-position-y: center;
+}
+
 /*
 ========================================================================
 # 3.0 - Couple styles
@@ -84,7 +95,6 @@ Index
 .thumb-img-content {
 	position:relative;
 	border-radius: 15px 15px 0 0;
-	margin-bottom: 2px;
 	height: auto;
 	overflow: hidden;
 }
@@ -190,7 +200,7 @@ Index
 */
 
 .people-thumb-img {
-	margin-bottom: 2px;
+
 }
 .people-thumb-img img {
 	border-radius: 20px 20px 0 0;

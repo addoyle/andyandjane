@@ -2,6 +2,9 @@ var moment = require('moment');
 
 var site = (function(site) {
   site.weddingDate = moment(site.weddingDate);
+  for (var s in site.stories) {
+    site.stories[s].date = moment(site.stories[s].date);
+  }
 
   return site;
 })(require('./src/site.json'));

@@ -1,0 +1,9 @@
+//- aside bar
+mixin aside(name, img)
+  section(id=name, class=name, style={'background-image': 'url(' + imgpath + img + ')'})
+    .color-overlay
+      .container
+        .row
+          .col-sm-12.text-center
+            if block
+              block

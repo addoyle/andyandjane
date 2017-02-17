@@ -1,0 +1,37 @@
+section#couple.couple
+  .container
+    .row
+      .col-sm-12.text-center
+        .heading.wow.animated.fadeInUp
+          h3 Happy Couple
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet pharetra <br>nunc, non scelerisque ligula. Crasveljusto nulla Vestibuluma.
+    .row
+      .col-sm-12.love-bg
+        .row
+          .col-sm-5
+            .thumbnail-block-content.wow.animated.fadeInLeft
+              .thumb-img-content
+                img.img-responsive(src=imgpath + groom.img, alt='Groom')
+                h5= groom.name.toUpperCase()
+              .thumbnail-detail
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Prae sent sit amet pharetra nunc, non scelerisque ligula. Cras vel justo nulla. Vestibulum a sollicitudin ultricies.
+                ul.social-icon
+                  each social in groom.socials
+                    li
+                      a(href=social.href)
+                        i.fa(class='fa-' + social.type)
+          .col-sm-5.col-sm-offset-2
+            .thumbnail-block-content.wow.animated.fadeInRight
+              .thumb-img-content
+                img.img-responsive(src=imgpath + bride.img, alt='Bride')
+                h5= bride.name.toUpperCase()
+              .thumbnail-detail
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Prae sent sit amet pharetra nunc, non scelerisque ligula. Cras vel justo nulla. Vestibulum a sollicitudin ultricies.
+                ul.social-icon
+                  each social in bride.socials
+                    li
+                      a(href=social.href)
+                        i.fa(class='fa-' + social.type)
+    #next-arrow.next-arrow
+      a.animated.infinite.rocket(href='#story')
+        i.fa.fa-angle-double-down

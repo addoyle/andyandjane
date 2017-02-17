@@ -453,30 +453,13 @@ ul, li {
       -ms-transition: opacity 1s;
        -o-transition: opacity 1s;
           transition: opacity 1s;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-
-#background-carousel .item-no1 {
-  background: url(/assets/images/slider/slide-1.jpg) no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#background-carousel .item-no2 {
-  background: url(/assets/images/slider/slide-2.jpg) no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#background-carousel .item-no3 {
-  background: url(/assets/images/slider/slide-3.jpg) no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 #background-carousel .carousel .active.left {
   left:0;
   opacity:0;
@@ -825,7 +808,9 @@ ul, li {
 */
 
 .rsvpLink {
-	background: url(/assets/images/bg/section_bg.jpg) no-repeat fixed center center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
 }
 .rsvpLink .color-overlay {
 	background: rgba(0,0,0,.7);

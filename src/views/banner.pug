@@ -4,9 +4,9 @@ header#banner.banner
       #background-carousel
         #myCarousel.carousel.slide(data-ride='carousel')
           .carousel-inner
-            .item.item-no1.active
-            .item.item-no2
-            .item.item-no3
+            - var first = false;
+            each slide in banner.carousel
+              .item(style={'background-image': 'url(' + imgpath + slide.src + ')'}, class=(slide.classes || '') + (first++ ? '' : ' active'))
     .container
       .row
         .col-sm-12.text-center
