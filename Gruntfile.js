@@ -5,6 +5,9 @@ var site = (function(site) {
   for (var s in site.stories) {
     site.stories[s].date = moment(site.stories[s].date);
   }
+  for (var s in site.events) {
+    site.events[s].date = moment(site.events[s].date);
+  }
 
   return site;
 })(require('./src/site.json'));

@@ -1,0 +1,14 @@
+section#gift.gift.white
+  .container
+    .row
+      .col-sm-12.text-center
+        .heading.wow.animated.fadeInUp
+          h3 Gift Registry
+          p You don't have to get us anything. But if you do, make sure it's one of these things!
+    .row
+      each gift in gifts
+        .col-sm-4
+          .gift-block.wow.animated.fadeInUp(data-wow-delay='0s', data-wow-duration='1s')
+            a(href=gift.href, target='_blank')
+              img.img-responsive(src=imgpath + gift.img, alt=gift.name)
+            span.gift-overlay

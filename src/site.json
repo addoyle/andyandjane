@@ -93,6 +93,46 @@
       ]
     }
   ],
+  "events": [
+    {
+      "name": "Bachelor Party",
+      "img": "event_01.png",
+      "date": "2017-07-14",
+      "desc": "This is a party for bachelors to do bachelor things.",
+      "href": "#"
+    },
+    {
+      "name": "Wedding Ceremony",
+      "img": "event_02.png",
+      "date": "2017-07-14",
+      "desc": "This is a ceremony for wedders to do wedding things.",
+      "href": "#"
+    },
+    {
+      "name": "Wedding Party",
+      "img": "event_03.png",
+      "date": "2017-07-14",
+      "desc": "This is a party for wedders to do wedding things.",
+      "href": "#"
+    }
+  ],
+  "gifts": [
+    {
+      "name": "Amazon",
+      "href": "https://amazon.com",
+      "img": "company_01.png"
+    },
+    {
+      "name": "Barnes & Noble",
+      "href": "https://barnesandnoble.com",
+      "img": "company_02.png"
+    },
+    {
+      "name": "Crate & Barrel",
+      "href": "https://crateandbarrel.com",
+      "img": "company_03.png"
+    }
+  ],
   "rsvpLink": {
     "img": "slider/dogs.jpg",
     "desc": "We want you to be there! Don't be late!",

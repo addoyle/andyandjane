@@ -1,0 +1,19 @@
+section#event.event.lightsmoke
+  .container
+    .row
+      .col-sm-12.text-center
+        .heading.wow.animated.fadeInUp
+          h3 Wedding Events
+          p Events happening near-ish to the wedding
+    .row
+      each event in events
+        .col-sm-6.col-md-4
+          .event-block.wow.animated.fadeInUp(data-wow-delay='.6s', data-wow-duration='1s')
+            .event-img
+              img.img-responsive(src=imgpath + event.img, alt=event.name)
+            .event-body
+              h5
+                a(href=event.href)= event.name.toUpperCase()
+              p= event.desc
+              span.event-date= event.date.format('MMMM do')
+                span.event-year= event.date.format('YYYY')
