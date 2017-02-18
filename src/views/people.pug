@@ -1,0 +1,40 @@
+mixin profile(person)
+  .col-sm-8
+    .profile
+      h5= person.name.toUpperCase()
+        small= person.role
+      p= person.desc
+mixin img(person)
+  .col-sm-4
+    .people-thumbnail-block
+      .people-thumb-img
+        img.img-responsive(src=imgpath + people[i].img)
+    .thumbnail-detail
+      ul.social-icon
+        each social in person.socials
+          li
+            a(href=social.href)
+              i.fa(class='fa-' + social.type)
+mixin person(side, person)
+  .col-sm-6(class=side + '-content')
+    .row.wow.animated(class='fadeIn' + side.charAt(0).toUpperCase() + side.slice(1), data-wow-delay="0s", data-wow-duration="1s")
+      if side == 'left'
+        +profile(person)
+        +img(person)
+      else
+        +img(person)
+        +profile(person)
+
+
+section#people.people
+  .container
+    .row
+      .col-sm-12.text-center
+        .heading.wow.animated.fadeInUp
+          h3 Important People
+          p Here's some pretty sweet folks.
+    - for (var i = 0; i < people.length; i += 2)
+        .row
+          +person('left', people[i])
+          if people[i+1]
+            +person('right', people[i+1])

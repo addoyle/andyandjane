@@ -43,6 +43,56 @@
       "alt": "First day of UMBC"
     }
   ],
+  "people": [
+    {
+      "name": "Jane Person",
+      "role": "Person of Note",
+      "desc": "This is a person. She does things.",
+      "img": "people_maid_of_honor_v2.jpg",
+      "alt": "Important person",
+      "socials": [
+        { "type": "twitter", "href": "twitter.com" },
+        { "type": "facebook", "href": "facebook.com" },
+        { "type": "instagram", "href": "instagram.com" }
+      ]
+    },
+    {
+      "name": "John Person",
+      "role": "Person of Remark",
+      "desc": "This is a person. He does things.",
+      "img": "people_bestman_v2.jpg",
+      "alt": "Important person",
+      "socials": [
+        { "type": "twitter", "href": "twitter.com" },
+        { "type": "facebook", "href": "facebook.com" },
+        { "type": "instagram", "href": "instagram.com" }
+      ]
+    },
+    {
+      "name": "Carol Person",
+      "role": "Person of Repute",
+      "desc": "This is a person. She does things.",
+      "img": "people_bridesmaid_v2.jpg",
+      "alt": "Important person",
+      "socials": [
+        { "type": "twitter", "href": "twitter.com" },
+        { "type": "facebook", "href": "facebook.com" },
+        { "type": "instagram", "href": "instagram.com" }
+      ]
+    },
+    {
+      "name": "Peter Person",
+      "role": "Person of Infamy",
+      "desc": "This is a person. He does things.",
+      "img": "people_groomman_v2.jpg",
+      "alt": "Important person",
+      "socials": [
+        { "type": "twitter", "href": "twitter.com" },
+        { "type": "facebook", "href": "facebook.com" },
+        { "type": "instagram", "href": "instagram.com" }
+      ]
+    }
+  ],
   "rsvpLink": {
     "img": "slider/dogs.jpg",
     "desc": "We want you to be there! Don't be late!",
