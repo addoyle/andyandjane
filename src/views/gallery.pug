@@ -1,0 +1,16 @@
+section#gallery.gallery.lightsmoke
+  .container
+    .row
+      .col-sm-12.text-center
+        .heading.wow.animated.fadeInUp
+          h3 Photo Gallery
+          p Some fun photos to look at
+    .row
+      .col-sm-12
+        #photo-gallery.photo-gallery
+          each photo in gallery
+            .item
+              img(src=imgpath + photo.thumbnail, alt=photo.title)
+              a.caption.gallery-popup(href=imgpath + photo.img)
+                h5= photo.title
+                span.img_category= photo.category
