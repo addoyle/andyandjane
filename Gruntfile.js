@@ -8,6 +8,9 @@ var site = (function(site) {
   for (var s in site.events) {
     site.events[s].date = moment(site.events[s].date);
   }
+  for (var s in site.blogs) {
+    site.blogs[s].date = moment(site.blogs[s].date);
+  }
 
   return site;
 })(require('./src/site.json'));
