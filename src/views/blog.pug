@@ -1,0 +1,26 @@
+section#blog.blog
+  .container
+    .row
+      .col-sm-12.text-center
+        .heading.wow.animated.faceInUp
+          h3 Our Blog
+          p Blog about our endeavors
+    .row
+      each blog in blogs
+        .col-sm-6.col-md-4
+          .blog-post.wow.animated.fadeInUp(data-wow-delay='0s', data-wow-duration='1s')
+            .blog-thumb
+              img.img-responsive(src=imgpath + blog.img, alt=blog.name)
+              .blog-thumb-hover
+                .blog-head
+                  h5
+                    a(href=blog.href)= blog.name.toLowerCase()
+                  .blog-meta
+                    ul
+                      li= blog.author.toLowerCase()
+                      li= blog.date.format('MMM D, YYYY').toLowerCase()
+                      li
+                        a(href=blog.href) 4 comments
+            a.blog-link(href=blog.href)
+              i.fa.fa-picture-o
+              i.fa.fa-link

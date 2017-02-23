@@ -1,6 +1,7 @@
 {
   "imgpath": "/assets/images/",
   "weddingDate": "2017-09-02 18:00:00",
+  "title": "Andy & Jane's Wedding",
   "styles": [
     "preloader.css",
     "style.css",
@@ -145,12 +146,34 @@
     "contactLink": "#contact",
     "mapLink": "#map"
   },
-  "footerNavs": [
-    { "name": "Home", "href": "#banner" },
-    { "name": "Gallery", "href": "#gallery" },
-    { "name": "Blog", "href": "#blog" },
-    { "name": "RSVP", "href": "#contact" }
-  ],
+  "quote": {
+    "img": "slider/parrots.jpg",
+    "quote": "For some people, the point of no return begins at the very <br> moment their souls become aware of each other's existence."
+  },
+  "contact": {
+    "venue": "Rawlings Conservatory",
+    "street": "3100 Swann Dr",
+    "city": "Baltimore",
+    "state": "MD",
+    "zip": "21217",
+    "andy": {
+      "phone": "410-440-8478",
+      "email": "andy.d.doyle@gmail.com"
+    },
+    "jane": {
+      "phone": "410-926-2652",
+      "email": "gingingray@yahoo.com"
+    }
+  },
+  "footer": {
+    "img": "slider/snakes.jpg",
+    "navs": [
+      { "name": "Home", "href": "#banner" },
+      { "name": "Gallery", "href": "#gallery" },
+      { "name": "Blog", "href": "#blog" },
+      { "name": "RSVP", "href": "#contact" }
+    ]
+  },
   "socials": [
     { "type": "facebook", "href": "facebook.com" },
     { "type": "twitter", "href": "twitter.com" },
@@ -174,6 +197,15 @@
       { "type": "instagram", "href": "instagram.com" }
     ]
   },
+  "blogs": [
+    {
+      "name": "Bachelorette Party",
+      "img": "blog_thumbnail_01_v2.jpg",
+      "author": "Jacky",
+      "date": "2017-01-25",
+      "href": "blog-single.html"
+    }
+  ],
   "gallery": [
     {
       "title": "Happy Moment",

@@ -1676,7 +1676,9 @@ ul.media-list + ul .media-object {
 */
 
 footer {
-	background: url(/assets/images/bg/section_bg.jpg) no-repeat fixed center center;
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center 90%;
 	text-align: center;
 }
 footer .color-overlay {

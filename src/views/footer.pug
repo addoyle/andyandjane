@@ -1,4 +1,4 @@
-footer
+footer(style={'background-image': 'url(' + imgpath + footer.img + ')'})
   .color-overlay
     .container
       .row
@@ -11,7 +11,7 @@ footer
       .row
         .col-sm-12.text-center
           ul.nav.nav-pills
-            each nav in footerNavs
+            each nav in footer.navs
               li(role='presentation')
                 a(href=nav.href)=nav.name.toUpperCase()
         .col-sm-12.text-center

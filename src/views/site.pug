@@ -39,6 +39,17 @@ html(lang='en')
 		//- gallery
 		include gallery.pug
 
+		//- blog
+		include blog.pug
+		
+		//- quote
+		+aside('quote', quote.img)
+			blockquote
+				p!= quote.quote
+
+		//- contact
+		include contact.pug
+
 		//- map
 		include map.pug
 

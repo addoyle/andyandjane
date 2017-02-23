@@ -1,0 +1,45 @@
+section#contact.contact
+  .container
+    .row
+      .col-sm-12.text-center
+        .heading.wow.animated.fadeInUp
+          h3 RSVP
+          p We can't wait to see you!
+    .row
+      .col-sm-3.divider
+        h5 contact info
+        .contact-address
+          ul
+            li
+              i.fa.fa-home
+              .address-phone
+                h4 address
+                span= contact.venue
+                span= contact.street
+                span= contact.city + ', ' + contact.state + ' ' + contact.zip
+            li
+              i.fa.fa-phone
+              .address-phone
+                h4 phone
+                span= 'Andy '
+                  a(href='tel:' + contact.andy.phone)= contact.andy.phone
+                span= 'Jane '
+                  a(href='tel:' + contact.jane.phone)= contact.jane.phone
+            li
+              i.fa.fa-paper-plane
+              .address-phone
+                h4 email
+                span= 'Andy '
+                  a(href='mailto:' + contact.andy.email)= contact.andy.email
+                span= 'Jane '
+                  a(href='mailto:' + contact.jane.email)= contact.jane.email
+      .col-sm-9
+        .contact-block
+          h5 Events Attending
+          form.contact_form(role='form', action='/rsvp', method='POST')
+            .row
+              .col-sm-6
+                .form-group
+                  input.form-control#name(name='name', placeholder='Your name...', required='required')
+                .form-group
+                  
