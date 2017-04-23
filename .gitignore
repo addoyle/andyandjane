@@ -39,3 +39,6 @@ bower_components
 
 # Deployed directory
 deploy
+
+# Sass cache
+.sass-cache

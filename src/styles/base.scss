@@ -1,0 +1,9 @@
+body, html {
+  font: $content_font;
+  letter-spacing: 0;
+  background: $bg_color;
+  color: $default_text_color;
+  @include prefix((
+    font-smoothing: antialiased
+  ), webkit moz ms)
+}

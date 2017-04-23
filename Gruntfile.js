@@ -28,6 +28,18 @@ module.exports = function(grunt) {
         }
       }
     },
+    sass: {
+      deploy: {
+        options: {
+          style: 'expanded',
+          sourcemap: 'none'
+        },
+        files: {
+          'deploy/assets/css/main.css': 'src/styles/main.scss',
+          'deploy/assets/css/preloader.css': 'src/styles/preloader.scss'
+        }
+      }
+    },
     wiredep: {
       deploy: {
         src: [ 'deploy/index.html' ],
@@ -59,6 +71,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-pug');
   grunt.loadNpmTasks('grunt-wiredep');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
-  grunt.registerTask('default', ['pug', 'wiredep', 'copy']);
+  grunt.registerTask('default', ['pug', 'sass', 'wiredep', 'copy']);
 };

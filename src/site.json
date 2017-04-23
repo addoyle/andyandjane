@@ -4,10 +4,13 @@
   "title": "Andy & Jane's Wedding",
   "styles": [
     "preloader.css",
+    "main.css",
+    "http://fonts.googleapis.com/css?family=PT+Sans:400,700|Lobster"
+  ],
+  "_styles": [
     "style.css",
     "custom-style.css",
-    "responsive.css",
-    "http://fonts.googleapis.com/css?family=PT+Sans:400,700|Lobster"
+    "responsive.css"
   ],
   "scripts": [
     "https://maps.googleapis.com/maps/api/js",
