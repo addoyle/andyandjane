@@ -6,57 +6,34 @@ html(lang='en')
 	head
 		include meta.pug
 	body
-		//- Preloader
 		include preloader.pug
-
-		//- banner
+		
+		//- Header
 		include banner.pug
-
-		//- navigation
 		include nav.pug
-
-		//- couple
+		
+		//- Sections
 		include couple.pug
-
-		//- story
 		include story.pug
-
-		//- rsvp link
 		+aside('rsvpLink', rsvpLink.img)
 			span.rsvpLink-title= rsvpLink.desc
 			a.btn.default-btn(href=rsvpLink.contactLink) RSVP
 			a.btn.default-btn(href=rsvpLink.mapLink) MAP
-
-		//- people
 		include people.pug
-
-		//- events
 		include events.pug
-
-		//- gifts
 		include gift.pug
-		
-		//- gallery
 		include gallery.pug
-
-		//- blog
 		include blog.pug
-		
-		//- quote
 		+aside('quote', quote.img)
 			blockquote
 				p!= quote.quote
-
-		//- contact
 		include contact.pug
-
-		//- map
 		include map.pug
-
-		//- footer
+		
+		//- Footer
 		include footer.pug
 
-		//- scripts
+		//- Scripts
 		// bower:js
 		// endbower
 		each script in scripts
