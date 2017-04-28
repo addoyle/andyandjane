@@ -155,30 +155,30 @@ ul, li {
 .form-control::-moz-placeholder {
   color: #bdbdbd;
   opacity: 1;
-  font-size: 12px;
+  /*font-size: 16px;*/
   line-height: 18px;
 }
 .form-control::-ms-input-placeholder {
   color: #bdbdbd;
-  font-size: 12px;
+  /*font-size: 16px;*/
   line-height: 18px;
 }
 .form-control::-webkit-input-placeholder {
   color: #bdbdbd;
-  font-size: 12px;
+  /*font-size: 16px;*/
   line-height: 18px;
 }
 
 /*-----on focus style-----*/
 
 .form-control:focus::-moz-placeholder {
-  color: #000;
+  /*color: #000;*/
 }
 .form-control:focus:-ms-input-placeholder {
-  color: #000;
+  /*color: #000;*/
 }
 .form-control:focus::-webkit-input-placeholder {
-  color: #000;
+  /*color: #000;*/
 }
 
 /*-----section style-----*/
@@ -252,7 +252,8 @@ ul, li {
 */
 
 .nav-block {
-	background: #d44646;
+	/*background: #d44646;*/
+  background: #ed0b0b;
 	padding: 20px 0;
 	width: 100%;
 	z-index: 1000;
@@ -269,7 +270,8 @@ ul, li {
 	padding: 10px 0 10px;
 }
 .nav-block .navbar-default {
-  background-color: #d44646;
+  /*background-color: #d44646;*/
+  background-color: #ed0b0b;
   border-color: transparent;
 }
 .nav-block .navbar-default .navbar-toggle {
@@ -1266,16 +1268,33 @@ blockquote:before {
 }
 .contact .form-group {
     margin-bottom: 24px;
+    position: relative;
+}
+.contact .input-group-btn .btn.btn-default {
+  background: #fcfcfc;
+  border-color: #e1704b;
+  color: #000;
+}
+.contact .input-group-btn .btn.btn-default:hover {
+  background: #f5ebe8;
+}
+.contact .input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group {
+  border-right: none;
 }
 .contact .form-control,
+.contact .input-group-btn .btn,
 .contact textarea {
 	background: #fcfcfc;
-	border: 1px solid #e1704b;
+	/*border: 1px solid #e1704b;*/
+  border-color: #e1704b;
 	padding: 10px 12px;
 	color: #000;
 	height: 45px;
 	font-weight: 400;
-	border-radius: 0;
+	/*border-radius: 0;*/
+}
+.contact .input-group-btn .btn {
+  width: 60px;
 }
 .contact .form-control:last-child {
     margin-bottom: 0;
@@ -1297,6 +1316,45 @@ blockquote:before {
 input[type="submit"]:focus, input[type="submit"]:active {
 	outline: none;
 	border: 1px solid #E1704B;
+}
+.floating-label-form-group {
+  margin-top: 24px;
+}
+.floating-label-form-group label {
+  position: absolute;
+  top: -34px;
+  left: 0;
+  padding: 9px 14px;
+  font-weight: 700;
+  font-size: 12px;
+  z-index: 3;
+  pointer-events: none;
+  transition: all .2s ease;
+}
+.floating-label-form-group .input-group-btn ~ .form-control:placeholder-shown:not(:focus) + label {
+  left: 58px;
+}
+.floating-label-form-group .form-control:placeholder-shown:not(:focus)::-webkit-input-placeholder {
+  opacity: 0;
+}
+.floating-label-form-group .form-control:placeholder-shown:not(:focus)::-ms-input-placeholder {
+  opacity: 0;
+}
+.floating-label-form-group .form-control:placeholder-shown:not(:focus)::-moz-placeholder {
+  opacity: 0;
+}
+.floating-label-form-group .form-control:placeholder-shown:not(:focus)::placeholder {
+  opacity: 0;
+}
+.floating-label-form-group .form-control:placeholder-shown:not(:focus) + label {
+  top: 0;
+  font-size: 14px;
+  font-weight: 400;
+  left: 0;
+}
+.contact .btn.active {
+  background-color: #D44646;
+  color: #fff;
 }
 
  /*----Selectbox style--------*/

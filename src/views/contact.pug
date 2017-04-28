@@ -35,11 +35,51 @@ section#contact.contact
                   a(href='mailto:' + contact.jane.email)= contact.jane.email
       .col-sm-9
         .contact-block
-          h5 Events Attending
-          form.contact_form(role='form', action='/rsvp', method='POST')
+          h5 Your RSVP
+          form.contact_form(role='form', action='/rsvp  ', method='POST')
             .row
               .col-sm-6
+                .form-group.floating-label-form-group
+                  .input-group
+                    .input-group-btn
+                      button.btn.btn-default.dropdown-toggle(data-toggle="dropdown", data-select-for="#guest_title", aria-haspopup="true", aria-expanded="false")
+                        span Mr.&nbsp;
+                        span.caret
+                      ul.dropdown-menu
+                        li
+                          each honorific in honorifics
+                            li
+                              a(href="#") #{honorific}
+                    input.form-control#guest_name(name='guest_name', required='required', placeholder='John Doe')
+                    label Your Name
+                .form-group.floating-label-form-group
+                  .input-group
+                    .input-group-btn
+                      button.btn.btn-default.dropdown-toggle(data-toggle="dropdown", data-select-for="#plusone_title", aria-haspopup="true", aria-expanded="false")
+                        span Mr.&nbsp;
+                        span.caret
+                      ul.dropdown-menu
+                        each honorific in honorifics
+                          li
+                            a(href="#") #{honorific}
+                    input.form-control#plusone_name(name='plusone_name', placeholder='John Doe')
+                    label Your Guest's Name
                 .form-group
-                  input.form-control#name(name='name', placeholder='Your name...', required='required')
+                  .btn-group(data-toggle='buttons')
+                    label.btn.default-btn.active I will be attending!&nbsp;
+                      span.fa.fa-smile-o
+                      input#rsvp_yes(type='radio', name='rsvp', checked='checked', autocomplete='off')
+                    label.btn.default-btn I will not attend&hellip;
+                      span.fa.fa-frown-o
+                      input#rsvp_no(type='radio', name='rsvp', checked='checked', autocomplete='off')
+              .col-sm-6
+                .form-group.floating-label-form-group
+                  textarea.form-control#message(name='message', placeholder='We can\'t wait to see you!')
+                  label Write your message
                 .form-group
-                  
+                  button.btn.default-btn.btn-block
+                    span.fa.fa-paper-plane
+                    | &nbsp;Submit
+            //- Hidden fields
+            input#guest_title(type="hidden", name="guest_title", value="Mr.")
+            input#plusone_title(type="hidden", name="plusone_title", value="Mr.")

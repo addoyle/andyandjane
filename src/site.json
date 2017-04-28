@@ -2,15 +2,17 @@
   "imgpath": "/assets/images/",
   "weddingDate": "2017-09-02 18:00:00",
   "title": "Andy & Jane's Wedding",
-  "styles": [
+  "sass_styles": [
     "preloader.css",
     "main.css",
     "http://fonts.googleapis.com/css?family=PT+Sans:400,700|Lobster"
   ],
-  "_styles": [
+  "styles": [
+    "preloader.css",
     "style.css",
     "custom-style.css",
-    "responsive.css"
+    "responsive.css",
+    "http://fonts.googleapis.com/css?family=PT+Sans:400,700|Lobster"
   ],
   "scripts": [
     "https://maps.googleapis.com/maps/api/js",
@@ -258,5 +260,6 @@
       "thumbnail": "gallery/gallery_thumb_08.jpg",
       "img": "gallery/gallery_image_08.jpg"
     }
-  ]
+  ],
+  "honorifics": ["Mr.", "Mrs.", "Ms.", "Mx."]
 }

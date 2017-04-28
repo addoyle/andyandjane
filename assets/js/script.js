@@ -188,10 +188,14 @@ $(document).ready(function() {
 	//------------------- Selectbox -------------------
 	//---------------------------------------------------
 
-	$(function () {
-		$("#numberOfGuest").selectbox();
-		$("#eventAttending").selectbox();
-	});
+	$('[data-select-for] ~ .dropdown-menu a').on('click', function(e) {
+		e.preventDefault();
+
+		var val = $(this).text();
+		var $btn = $(this).closest('.dropdown-menu').prev('[data-select-for]');
+		$btn.find('span:first-child').text(val + ' ');
+		$($btn.attr('data-select-for')).val(val);
+  });
 
 	//---------------------------------------------------
 	//---------------- Magnific Image Popup--------------
