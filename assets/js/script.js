@@ -240,20 +240,35 @@ $(document).ready(function() {
 
 	// --------------RSVP Form Ajax request-----------------------
 
-	$('.contact_form').on('submit', function(event){
-		event.preventDefault();
+	$('.contact_form .bring-guest button.yes-btn').on('click', function(e) {
+		e.preventDefault();
+		var $bringGuest = $(this).closest('.bring-guest');
+		var $input = $bringGuest.next('.input-group').find('input');
 
-		// $this = $(this);
+		$(this).next('.btn').removeClass('active');
 
-		var data = {
-			name: $('#name').val(),
-			numberOfGuest: $('#numberOfGuest').val(),
-			eventAttending: $('#eventAttending').val(),
-			// email: $('#contact_email').val(),
-			// subject: $('#subject').val(),
-			message: $('#message').val()
-		};
+		$bringGuest.animate({
+			left: $bringGuest.outerWidth()
+		}, function() {
+			$bringGuest.hide().closest('.form-group').css({overflow: 'visible'});
+			$input.focus();
+		});
+	});
 
+	$('.contact_form .bring-guest + .input-group .btn-cancel').on('click', function(e) {
+		e.preventDefault();
+
+		var $bringGuest = $(this).closest('.input-group').prev('.bring-guest');
+		$bringGuest.closest('.form-group').css({overflow: 'hidden'});
+		$bringGuest.show().animate({
+			left: 0
+		});
+	});
+
+	$('.contact_form').on('submit', function(e){
+		e.preventDefault();
+
+		var data = $(this).serializeObject();
 		$.ajax({
 			type: "POST",
 			url: "email.php",

@@ -1291,7 +1291,7 @@ blockquote:before {
 	color: #000;
 	height: 45px;
 	font-weight: 400;
-	/*border-radius: 0;*/
+	border-radius: 0;
 }
 .contact .input-group-btn .btn {
   width: 60px;
@@ -1311,7 +1311,7 @@ blockquote:before {
             box-shadow: none;
 }
 .contact textarea {
-    min-height: 115px;
+    min-height: 114px;
 }
 input[type="submit"]:focus, input[type="submit"]:active {
 	outline: none;
@@ -1335,16 +1335,16 @@ input[type="submit"]:focus, input[type="submit"]:active {
   left: 58px;
 }
 .floating-label-form-group .form-control:placeholder-shown:not(:focus)::-webkit-input-placeholder {
-  opacity: 0;
+  /*opacity: 0;*/
 }
 .floating-label-form-group .form-control:placeholder-shown:not(:focus)::-ms-input-placeholder {
-  opacity: 0;
+  /*opacity: 0;*/
 }
 .floating-label-form-group .form-control:placeholder-shown:not(:focus)::-moz-placeholder {
-  opacity: 0;
+  /*opacity: 0;*/
 }
 .floating-label-form-group .form-control:placeholder-shown:not(:focus)::placeholder {
-  opacity: 0;
+  /*opacity: 0;*/
 }
 .floating-label-form-group .form-control:placeholder-shown:not(:focus) + label {
   top: 0;
@@ -1352,9 +1352,21 @@ input[type="submit"]:focus, input[type="submit"]:active {
   font-weight: 400;
   left: 0;
 }
-.contact .btn.active {
-  background-color: #D44646;
+.contact .btn.active,
+.contact .input-group-btn .btn.active,
+.contact .input-group-btn .btn.active:hover {
+  background-color: #d44646;
   color: #fff;
+}
+.contact label.btn.default-btn:not(.active):hover {
+  background-color: #f5ebe8;
+  color: #e1704b;
+}
+.contact .bring-guest {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
 }
 
  /*----Selectbox style--------*/

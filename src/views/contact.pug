@@ -52,7 +52,12 @@ section#contact.contact
                               a(href="#") #{honorific}
                     input.form-control#guest_name(name='guest_name', required='required', placeholder='John Doe')
                     label Your Name
-                .form-group.floating-label-form-group
+                .form-group.floating-label-form-group(style='overflow: hidden')
+                  .input-group.bring-guest
+                    .form-control Are you bringing a guest?
+                    .input-group-btn
+                      button.btn.btn-default.yes-btn(type='button') Yes
+                      button.btn.btn-default(data-toggle='button') No
                   .input-group
                     .input-group-btn
                       button.btn.btn-default.dropdown-toggle(data-toggle="dropdown", data-select-for="#plusone_title", aria-haspopup="true", aria-expanded="false")
@@ -63,15 +68,17 @@ section#contact.contact
                           li
                             a(href="#") #{honorific}
                     input.form-control#plusone_name(name='plusone_name', placeholder='John Doe')
-                    label Your Guest's Name
+                    label Your Guest
+                    .input-group-btn
+                      button.btn.btn-default.btn-cancel(type='button') Cancel
                 .form-group
                   .btn-group(data-toggle='buttons')
                     label.btn.default-btn.active I will be attending!&nbsp;
                       span.fa.fa-smile-o
-                      input#rsvp_yes(type='radio', name='rsvp', checked='checked', autocomplete='off')
+                      input#rsvp_yes(type='radio', name='rsvp', autocomplete='off', value='yes', checked='checked')
                     label.btn.default-btn I will not attend&hellip;
                       span.fa.fa-frown-o
-                      input#rsvp_no(type='radio', name='rsvp', checked='checked', autocomplete='off')
+                      input#rsvp_no(type='radio', name='rsvp', autocomplete='off', value='no')
               .col-sm-6
                 .form-group.floating-label-form-group
                   textarea.form-control#message(name='message', placeholder='We can\'t wait to see you!')

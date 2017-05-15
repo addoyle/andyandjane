@@ -51,7 +51,8 @@ module.exports = function(grunt) {
           'font-awesome': { main: ['css/font-awesome.min.css']},
           wow: { main: ['dist/wow.min.js'] },
           masonry: { main: ['dist/masonry.pkgd.min.js'], dependencies: []},
-          imagesloaded: { main: ['imagesloaded.pkgd.min.js'], dependencies: []}
+          imagesloaded: { main: ['imagesloaded.pkgd.min.js']},
+          'jquery-serialize-object': { main: ['dist/jquery.serialize-object.min.js']}
         }
       }
     },

@@ -135,6 +135,10 @@
   .timeline-body {
   	font-size: 12px;
   }
+  .floating-label-form-group label {
+    height: 46px;
+    top: -28px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
