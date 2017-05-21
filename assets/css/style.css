@@ -1342,16 +1342,16 @@ input[type="submit"]:focus, input[type="submit"]:active {
   left: 57px;
 }
 .floating-label-form-group .form-control:placeholder-shown:not(:focus)::-webkit-input-placeholder {
-  /*opacity: 0;*/
+  opacity: 0;
 }
 .floating-label-form-group .form-control:placeholder-shown:not(:focus)::-ms-input-placeholder {
-  /*opacity: 0;*/
+  opacity: 0;
 }
 .floating-label-form-group .form-control:placeholder-shown:not(:focus)::-moz-placeholder {
-  /*opacity: 0;*/
+  opacity: 0;
 }
 .floating-label-form-group .form-control:placeholder-shown:not(:focus)::placeholder {
-  /*opacity: 0;*/
+  opacity: 0;
 }
 .contact .btn.active,
 .contact .input-group-btn .btn.active,
