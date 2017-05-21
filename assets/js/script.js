@@ -294,7 +294,7 @@ $(document).ready(function() {
 		var data = $this.serializeObject();
 		$.ajax({
 			type: "POST",
-			url: "email.php",
+			url: "rsvp.php",
 			data: data,
 			success: reset
 		});
