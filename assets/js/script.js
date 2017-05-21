@@ -279,24 +279,20 @@ $(document).ready(function() {
 		$btn.removeClass('success-btn').find('.fa').removeClass('fa-paper-plane').addClass('fa-circle-o-notch fa-spin');
 
 		var reset = function() {
-			if (this.shown) {
-				$btn.addClass('success-btn').find('.fa').removeClass('fa-paper-plane fa-circle-o-notch fa-spin').addClass('fa-check');
-				$btn.find('.title').text('Submitted!');
-				$this.removeClass('disabled');
-			} else {
-				this.shown = true;
-			}
+			$btn.addClass('success-btn').find('.fa').removeClass('fa-paper-plane fa-circle-o-notch fa-spin').addClass('fa-check');
+			$btn.find('.title').text('Submitted!');
+			$this.removeClass('disabled');
 		};
 
 		// Give the user a small delay before showing success, let them know it "worked"
-		setTimeout(reset, 2000);
-
 		var data = $this.serializeObject();
 		$.ajax({
 			type: "POST",
 			url: "rsvp.php",
 			data: data,
-			success: reset
+			success: function() {
+				setTimeout(reset, 2000);
+			}
 		});
 	});
 
