@@ -257,6 +257,7 @@ ul, li {
 	padding: 20px 0;
 	width: 100%;
 	z-index: 1000;
+  position: relative;
 	-webkit-transition: .3s ease;
 	   -moz-transition: .3s ease;
 	    -ms-transition: .3s ease;
@@ -1331,8 +1332,14 @@ input[type="submit"]:focus, input[type="submit"]:active {
   pointer-events: none;
   transition: all .2s ease;
 }
+.floating-label-form-group .form-control:placeholder-shown:not(:focus) + label {
+  top: 0;
+  font-size: 14px;
+  font-weight: 400;
+  left: -1px;
+}
 .floating-label-form-group .input-group-btn ~ .form-control:placeholder-shown:not(:focus) + label {
-  left: 58px;
+  left: 57px;
 }
 .floating-label-form-group .form-control:placeholder-shown:not(:focus)::-webkit-input-placeholder {
   /*opacity: 0;*/
@@ -1345,12 +1352,6 @@ input[type="submit"]:focus, input[type="submit"]:active {
 }
 .floating-label-form-group .form-control:placeholder-shown:not(:focus)::placeholder {
   /*opacity: 0;*/
-}
-.floating-label-form-group .form-control:placeholder-shown:not(:focus) + label {
-  top: 0;
-  font-size: 14px;
-  font-weight: 400;
-  left: 0;
 }
 .contact .btn.active,
 .contact .input-group-btn .btn.active,

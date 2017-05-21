@@ -89,6 +89,10 @@
   .nav-block .navbar-nav li {
       margin: 0 10px;
   }
+
+  .floating-label-form-group textarea.form-control:placeholder-shown:not(:focus) + label {
+    top: -3px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -135,9 +139,12 @@
   .timeline-body {
   	font-size: 12px;
   }
+
   .floating-label-form-group label {
-    height: 46px;
     top: -28px;
+  }
+  .floating-label-form-group input.form-control:placeholder-shown:not(:focus) + label {
+    top: 4px;
   }
 }
 
@@ -154,6 +161,13 @@
 	.event .col-md-4:last-child .event-block {
 		margin-top: 80px;
 	}
+  .bring-guest .form-control {
+    line-height: .8;
+    padding-top: 5px;
+  }
+  .rsvp-btns .btn {
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-width: 768px) {
