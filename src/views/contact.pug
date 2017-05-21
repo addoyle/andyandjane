@@ -38,7 +38,7 @@ section#contact.contact
           h5 Your RSVP
           form.contact_form(role='form', action='/rsvp.php', method='POST')
             .row
-              .col-sm-6
+              .col-md-6
                 .form-group.floating-label-form-group
                   .input-group
                     .input-group-btn
@@ -71,23 +71,19 @@ section#contact.contact
                     label Your Guest
                     .input-group-btn
                       button.btn.btn-default.btn-cancel(type='button') Cancel
-                .form-group
-                  .btn-group.rsvp-btns(data-toggle='buttons')
-                    label.btn.default-btn.active Attending!&nbsp;
-                      span.fa.fa-smile-o
-                      input#rsvp_yes(type='radio', name='rsvp', autocomplete='off', value='yes', checked='checked')
-                    label.btn.default-btn Not attending&hellip;
-                      span.fa.fa-frown-o
-                      input#rsvp_no(type='radio', name='rsvp', autocomplete='off', value='no')
-              .col-sm-6
+                
+              .col-md-6
                 .form-group.floating-label-form-group
                   textarea.form-control#message(name='message', placeholder='We can\'t wait to see you!')
                   label Write your message
                 .form-group
-                  button.btn.default-btn.btn-block.btn-submit
-                    span.fa.fa-paper-plane
-                    | &nbsp;
-                    span.title Submit
+                  .btn-group.rsvp-btns
+                    button.btn.default-btn.submit-btn(data-value='yes') 
+                      span.title Attending!&nbsp;
+                      span.fa.fa-smile-o
+                    button.btn.default-btn.submit-btn(data-value='no')
+                      span.title Not attending&hellip;&nbsp;
+                      span.fa.fa-frown-o
             //- Hidden fields
             input#guest_title(type="hidden", name="guest_title", value="Mr.")
             input#plusone_title(type="hidden", name="plusone_title", value="Mr.")

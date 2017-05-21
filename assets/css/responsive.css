@@ -161,13 +161,6 @@
 	.event .col-md-4:last-child .event-block {
 		margin-top: 80px;
 	}
-  .bring-guest .form-control {
-    line-height: .8;
-    padding-top: 5px;
-  }
-  .rsvp-btns .btn {
-    font-size: 12px;
-  }
 }
 
 @media screen and (min-width: 768px) {

@@ -265,15 +265,17 @@ $(document).ready(function() {
 		});
 	});
 
-	$('.contact_form').on('submit', function(e){
+	var handleSubmit = function(e){
 		e.preventDefault();
 
-		var $this = $(this);
-
-		var $btn = $this.find('.btn-submit');
+		var $form = $(this).closest('.contact-block').find('.contact_form');
+		var $btn = $(this);
+		if (!$btn.filter('[data-value]')) {
+			$btn = $('.rsvp-btns .submit-btn[data-value="yes"]');
+		}
 
 		// Disable form
-		$this.addClass('disabled');
+		$form.addClass('disabled');
 
 		// Change icon to spinner
 		$btn.removeClass('success-btn').find('.fa').removeClass('fa-paper-plane').addClass('fa-circle-o-notch fa-spin');
@@ -281,11 +283,13 @@ $(document).ready(function() {
 		var reset = function() {
 			$btn.addClass('success-btn').find('.fa').removeClass('fa-paper-plane fa-circle-o-notch fa-spin').addClass('fa-check');
 			$btn.find('.title').text('Submitted!');
-			$this.removeClass('disabled');
+			$form.removeClass('disabled');
 		};
 
 		// Give the user a small delay before showing success, let them know it "worked"
-		var data = $this.serializeObject();
+		var data = $form.serializeObject();
+		data.rsvp = $btn.attr('data-value');
+		console.log(data);
 		$.ajax({
 			type: "POST",
 			url: "rsvp.php",
@@ -294,7 +298,10 @@ $(document).ready(function() {
 				setTimeout(reset, 2000);
 			}
 		});
-	});
+	};
+
+	$('.submit-btn').on('click', handleSubmit);
+	$('.contact_form').on('submit', handleSubmit);
 
 	/* =================================
 	===  IE10 ON WINDOWS 8 FIX      ====
