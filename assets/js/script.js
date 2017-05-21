@@ -268,12 +268,17 @@ $(document).ready(function() {
 	$('.contact_form').on('submit', function(e){
 		e.preventDefault();
 
-		var $btn = $(this).find('.btn-submit');
+		var $this = $(this);
+
+		var $btn = $this.find('.btn-submit');
+
+		// Disable form
+		$this.addClass('disabled');
 
 		// Change icon to spinner
 		$btn.removeClass('success-btn').find('.fa').removeClass('fa-paper-plane').addClass('fa-circle-o-notch fa-spin');
 
-		var data = $(this).serializeObject();
+		var data = $this.serializeObject();
 		// $.ajax({
 		// 	type: "POST",
 		// 	url: "email.php",
@@ -287,6 +292,7 @@ $(document).ready(function() {
 		setTimeout(function() {
 			$btn.addClass('success-btn').find('.fa').removeClass('fa-paper-plane fa-circle-o-notch fa-spin').addClass('fa-check');
 			$btn.find('.title').text('Submitted!');
+			$this.removeClass('disabled');
 		}, 3000);
 
 	});

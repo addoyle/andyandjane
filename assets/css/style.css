@@ -1422,6 +1422,24 @@ input[type="submit"]:focus, input[type="submit"]:active {
 	text-align: center;
 	display: none;
 }
+.contact_form.disabled .form-control,
+.contact_form.disabled .input-group-btn .btn {
+  background-color: #eee;
+}
+.contact_form.disabled .form-control,
+.contact_form.disabled .form-control ~ label,
+.contact_form.disabled .input-group-btn .btn {
+  color: #fff;
+  text-shadow: 1px 1px 0 #999;
+}
+.contact_form.disabled .btn-group[data-toggle] .btn {
+  background-color: #eee;
+  color: #e0bfb4;
+}
+.contact_form.disabled .btn-group[data-toggle] .btn.active {
+  color: #fff;
+  background-color: #e0bfb4;
+}
 
 .map {
 	width: 100%;
