@@ -63,6 +63,10 @@ module.exports = function(grunt) {
             expand: true,
             src: 'assets/**',
             dest: 'deploy/'
+          },
+          {
+            src: '*.php',
+            dest: 'deploy/'
           }
         ]
       }

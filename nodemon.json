@@ -3,5 +3,5 @@
     "deploy"
   ],
   "exec": "grunt",
-  "ext": "pug,json,css,js"
+  "ext": "pug,json,css,js,php"
 }
