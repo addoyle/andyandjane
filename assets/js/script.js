@@ -268,15 +268,27 @@ $(document).ready(function() {
 	$('.contact_form').on('submit', function(e){
 		e.preventDefault();
 
+		var $btn = $(this).find('.btn-submit');
+
+		// Change icon to spinner
+		$btn.removeClass('success-btn').find('.fa').removeClass('fa-paper-plane').addClass('fa-circle-o-notch fa-spin');
+
 		var data = $(this).serializeObject();
-		$.ajax({
-			type: "POST",
-			url: "email.php",
-			data: data,
-			success: function(msg){
-				$('.contact-success').fadeIn().delay(3000).fadeOut();
-			}
-		});
+		// $.ajax({
+		// 	type: "POST",
+		// 	url: "email.php",
+		// 	data: data,
+		// 	success: function(msg){
+		// 		$('.contact-success').fadeIn().delay(3000).fadeOut();
+		// 	}
+		// });
+		// $('.contact-success').fadeIn().delay(3000).fadeOut();
+
+		setTimeout(function() {
+			$btn.addClass('success-btn').find('.fa').removeClass('fa-paper-plane fa-circle-o-notch fa-spin').addClass('fa-check');
+			$btn.find('.title').text('Submitted!');
+		}, 3000);
+
 	});
 
 	/* =================================
