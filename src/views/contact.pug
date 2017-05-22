@@ -14,9 +14,10 @@ section#contact.contact
               i.fa.fa-home
               .address-phone
                 h4 address
-                span= contact.venue
-                span= contact.street
-                span= contact.city + ', ' + contact.state + ' ' + contact.zip
+                a(href=contact.maps_url, target="_blank")
+                  span= contact.venue
+                  span= contact.street
+                  span= contact.city + ', ' + contact.state + ' ' + contact.zip
             li
               i.fa.fa-phone
               .address-phone

@@ -6,6 +6,17 @@ section#gift.gift.white
           h3 Gifts
           p In lieu of gifts, we ask that you make a donation to one of the following local organizations:
     .row
+      each gift in charities
+        .col-sm-4
+          .gift-block.wow.animated.fadeInUp(data-wow-delay='0s', data-wow-duration='1s')
+            a(href=gift.href, target='_blank', title=gift.name)
+              img.img-responsive(src=imgpath + gift.img, alt=gift.name)
+            span.gift-overlay
+    .row
+      .col-sm-12.text-center
+        .heading.wow.animated.fadeInUp
+          p We are also registered at:
+    .row
       each gift in gifts
         .col-sm-4
           .gift-block.wow.animated.fadeInUp(data-wow-delay='0s', data-wow-duration='1s')

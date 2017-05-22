@@ -1269,6 +1269,9 @@ blockquote:before {
 	line-height: normal;
 	letter-spacing: 0.025em;
 }
+.contact-address a span {
+  color: inherit;
+}
 .divider {
      border-right: 1px solid #d9d9d9;
 }

@@ -128,7 +128,7 @@
       "href": "#"
     }
   ],
-  "gifts": [
+  "charities": [
     {
       "name": "Susquehannock Wildlife Society",
       "href": "http://www.susquehannockwildlife.org/donate/",
@@ -160,6 +160,13 @@
       "img": "blue-water.png"
     }
   ],
+  "gifts": [
+    {
+      "name": "Amazon",
+      "href": "http://amazon.com/",
+      "img": "amazon-logo.png"
+    }
+  ],
   "rsvpLink": {
     "img": "slider/dogs.jpg",
     "desc": "We want you to be there! Don't be late!",
@@ -176,6 +183,7 @@
     "city": "Baltimore",
     "state": "MD",
     "zip": "21217",
+    "maps_url": "https://www.google.com/maps/place/Rawlings+Conservatory/@39.3185704,-76.6479233,17z/data=!3m1!4b1!4m5!3m4!1s0x89c81b33c0e81c41:0x993d3cb5f38f5105!8m2!3d39.3185704!4d-76.6457346",
     "andy": {
       "phone": "410-440-8478",
       "email": "andy.d.doyle@gmail.com"
