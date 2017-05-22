@@ -1,19 +1,19 @@
-section#event.event.lightsmoke
+section#venue.event.lightsmoke
   .container
     .row
       .col-sm-12.text-center
         .heading.wow.animated.fadeInUp
-          h3 Wedding Events
-          p Events happening near-ish to the wedding
+          h3 Venue
+          p The Rawlings Conservatory opened in Druid Hill Park in 1888 and is one of the oldest Victorian-style conservatories still standing in the United States.  The building includes five main sections, displaying beautiful living plants from around the world: the Palm House, the Orchid Room, the Mediterranean Garden, the Desert Garden, and the Tropical Garden.  Our guests will also enjoy the outdoor Rose Garden, featuring a multi-faceted sundial crafted in 1890, and a tented outdoor dancefloor.
     .row
-      each event in events
+      each venue in venues
         .col-sm-6.col-md-4
           .event-block.wow.animated.fadeInUp(data-wow-delay='.6s', data-wow-duration='1s')
             .event-img
-              img.img-responsive(src=imgpath + event.img, alt=event.name)
+              img.img-responsive(src=imgpath + venue.img, alt=venue.name)
             .event-body
               h5
-                a(href=event.href)= event.name.toUpperCase()
-              p= event.desc
-              span.event-date= event.date.format('MMMM do')
-                span.event-year= event.date.format('YYYY')
+                a(href=venue.href)= venue.name.toUpperCase()
+              p= venue.desc
+              a.event-date(href=venue.href, title="Get directions")
+                span.fa(class="fa-" + venue.icon)

@@ -5,8 +5,8 @@ var site = (function(site) {
   for (var s in site.stories) {
     site.stories[s].date = moment(site.stories[s].date);
   }
-  for (var s in site.events) {
-    site.events[s].date = moment(site.events[s].date);
+  for (var s in site.venues) {
+    site.venues[s].date = moment(site.venues[s].date);
   }
   for (var s in site.blogs) {
     site.blogs[s].date = moment(site.blogs[s].date);

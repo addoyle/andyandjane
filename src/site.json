@@ -30,7 +30,7 @@
     { "name": "Couple", "href": "#couple" },
     { "name": "story", "href": "#story" },
     { "name": "People", "href": "#people" },
-    { "name": "Event", "href": "#event" },
+    { "name": "Venue", "href": "#venue" },
     { "name": "Gift", "href": "#gift" },
     { "name": "Gallery", "href": "#gallery" },
     { "name": "Blog", "href": "#blog" },
@@ -105,27 +105,30 @@
       ]
     }
   ],
-  "events": [
+  "venues": [
     {
-      "name": "Bachelor Party",
-      "img": "event_01.png",
+      "name": "Rawlings Conservatory",
+      "img": "conservatory1.jpg",
       "date": "2017-07-14",
-      "desc": "This is a party for bachelors to do bachelor things.",
-      "href": "#"
+      "desc": "Howard Peters Rawlings Conservatory and Botanic Gardens of Baltimore. Click below for directions.",
+      "href": "https://www.google.com/maps/place/Rawlings+Conservatory/@39.3185704,-76.6479233,17z/data=!3m1!4b1!4m5!3m4!1s0x89c81b33c0e81c41:0x993d3cb5f38f5105!8m2!3d39.3185704!4d-76.6457346",
+      "icon": "map-marker"
     },
     {
-      "name": "Wedding Ceremony",
-      "img": "event_02.png",
+      "name": "Gardens",
+      "img": "gardens.jpg",
       "date": "2017-07-14",
-      "desc": "This is a ceremony for wedders to do wedding things.",
-      "href": "#"
+      "desc": "Featuring the Orchid Room, Palm House, Desert House, Mediterranean House, and Outdoor Gardens",
+      "href": "#",
+      "icon": "globe"
     },
     {
-      "name": "Wedding Party",
-      "img": "event_03.png",
+      "name": "Outdoor Events",
+      "img": "conservatory3.jpg",
       "date": "2017-07-14",
-      "desc": "This is a party for wedders to do wedding things.",
-      "href": "#"
+      "desc": "Outdoor seating and an outdoor dance floor.",
+      "href": "#",
+      "icon": "glass"
     }
   ],
   "charities": [
@@ -198,7 +201,7 @@
     "navs": [
       { "name": "Home", "href": "#banner" },
       { "name": "Gallery", "href": "#gallery" },
-      { "name": "Blog", "href": "#blog" },
+      { "name": "Venue", "href": "#venue" },
       { "name": "RSVP", "href": "#contact" }
     ]
   },

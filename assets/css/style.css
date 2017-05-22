@@ -931,7 +931,12 @@ ul, li {
     color: #fff;
     border-radius: 50%;
     text-align: center;
-    padding: 25px 10px;
+    font-size: 48px;
+    line-height: 1.9;
+    padding: 10px;
+}
+.event-date:hover {
+  color: #fff;
 }
 .event-year {
     color: #B8B8B8;
