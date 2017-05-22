@@ -947,6 +947,9 @@ ul, li {
 .gift {
 	padding: 100px 0;
 }
+.gift .col-sm-4 {
+  padding-bottom: 30px
+}
 .gift-block {
 	position: relative;
     padding: 65px 20px;
@@ -974,6 +977,17 @@ ul, li {
 }
 .gift-block img {
     display: inline-block;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in;
+         -moz-transition: .3s ease-in;
+          -ms-transition: .3s ease-in;
+           -o-transition: .3s ease-in;
+              transition: .3s ease-in;
+}
+.gift-block:hover img {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 .gift-overlay {
 	position: absolute;
@@ -981,7 +995,7 @@ ul, li {
 	right: 0px;
 	top: 0px;
 	bottom: 0px;
-	background: rgba(219,219,219,.9);
+	background: rgba(219,219,219,.5);
 	-webkit-transition: .3s ease-in;
        -moz-transition: .3s ease-in;
         -ms-transition: .3s ease-in;

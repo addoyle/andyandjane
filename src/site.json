@@ -15,7 +15,7 @@
     "http://fonts.googleapis.com/css?family=PT+Sans:400,700|Lobster"
   ],
   "scripts": [
-    "https://maps.googleapis.com/maps/api/js",
+    "https://maps.googleapis.com/maps/api/js&key=AIzaSyCIx7mdh1kUmga7xksy_mOpBdTPUI1SteU",
     "script.js",
     "maps.js"
   ],
@@ -130,19 +130,34 @@
   ],
   "gifts": [
     {
-      "name": "Amazon",
-      "href": "https://amazon.com",
-      "img": "company_01.png"
+      "name": "Susquehannock Wildlife Society",
+      "href": "http://www.susquehannockwildlife.org/donate/",
+      "img": "SusquehannockWildlifeSociety-Logo.png"
     },
     {
-      "name": "Barnes & Noble",
-      "href": "https://barnesandnoble.com",
-      "img": "company_02.png"
+      "name": "Maryland Natural History Society",
+      "href": "http://marylandnature.org/support-maryland-nature/",
+      "img": "nat-hist-soc.png"
     },
     {
-      "name": "Crate & Barrel",
-      "href": "https://crateandbarrel.com",
-      "img": "company_03.png"
+      "name": "Mid-Atlantic Turtle and Tortoise Society",
+      "href": "http://www.matts-turtles.org/support.html",
+      "img": "turtles.png"
+    },
+    {
+      "name": "Chesapeake Parrot Sanctuary",
+      "href": "http://www.icarusfoundation.org/how-you-can-help.html",
+      "img": "icarus.png"
+    },
+    {
+      "name": "Maryland SPCA",
+      "href": "http://www.mdspca.org/give",
+      "img": "md-spca.png"
+    },
+    {
+      "name": "Blue Water Baltimore",
+      "href": "https://www.bluewaterbaltimore.org/donate/",
+      "img": "blue-water.png"
     }
   ],
   "rsvpLink": {
