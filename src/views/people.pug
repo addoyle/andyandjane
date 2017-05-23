@@ -26,13 +26,19 @@ mixin person(side, person)
         +profile(person)
 
 
-section#people.people
+section#dining.people.lightsmoke
   .container
     .row
       .col-sm-12.text-center
         .heading.wow.animated.fadeInUp
-          h3 Important People
-          p Here's some pretty sweet folks.
+          h3 Dining
+          p Dining will be provided by Zeffert &amp; Gold Catering. Food will be served cocktail-style throughout the Conservatory, with themed selections for each of the Mediterranean, Desert, and Tropical sections. Beer, wine, and cocktails will be served until 10pm.
+          p Red velvet and black bottom cupcakes will be provided by Flavor Cupcakery. 
+          p
+            a(href="http://flavorcupcakery.com/", target="_blank", style="margin: 0 10px")
+              img(src=imgpath + "zeffert_and_gold.png", style="height: 83px;")
+            a(href="http://flavorcupcakery.com/", target="_blank", style="margin: 0 10px")
+              img(src=imgpath + "flavor_cupcakery.png", style="height: 83px;")
     - for (var i = 0; i < people.length; i += 2)
         .row
           +person('left', people[i])

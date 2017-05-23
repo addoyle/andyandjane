@@ -329,6 +329,10 @@ ul, li {
 .nav-block ul > li a:hover {
 	color: whitesmoke;
 }
+.nav-block .navbar-default .navbar-nav > li > a:active,
+.nav-block .navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+}
 .navbar-default .navbar-nav > .current > a,
 .navbar-default .navbar-nav > .current > a:hover,
 .navbar-default .navbar-nav > .current > a:focus {

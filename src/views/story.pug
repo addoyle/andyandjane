@@ -3,8 +3,7 @@ section#story.story.lightsmoke
     .row
       .col-sm-12.text-center
         .heading.wow.animated.fadeInUp
-          h3 Our Love Story
-          p The story of Andy and Jane
+          h3 Our Story
     .row
       .col-sm-12
         .timeline-block-content
@@ -15,7 +14,7 @@ section#story.story.lightsmoke
                   h4= story.title
               .col-sm-8
                 span.love-v-sign
-                span.timeline-meta.pull-right= story.date.format('do [of] MMMM, YYYY')
+                span.timeline-meta.pull-right
                 .timeline-left-content.pull-right.wow.animated.fadeInRight(data-wow-delay='0s', data-wow-duration='1s')
                   .timeline-block-left
                     img.img-responsive(src=imgpath + story.img, alt=story.alt)

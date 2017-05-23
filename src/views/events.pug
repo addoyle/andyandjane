@@ -1,4 +1,4 @@
-section#venue.event.lightsmoke
+section#venue.event.white
   .container
     .row
       .col-sm-12.text-center
@@ -14,6 +14,10 @@ section#venue.event.lightsmoke
             .event-body
               h5
                 a(href=venue.href)= venue.name.toUpperCase()
-              p= venue.desc
-              a.event-date(href=venue.href, title="Get directions")
-                span.fa(class="fa-" + venue.icon)
+              p !{venue.desc}
+              if venue.href
+                a.event-date(href=venue.href, title="Get directions")
+                  span.fa(class="fa-" + venue.icon)
+              else
+                span.event-date
+                  span.fa(class="fa-" + venue.icon)

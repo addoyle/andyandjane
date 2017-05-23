@@ -27,13 +27,12 @@
   },
   "navs": [
     { "name": "Home", "href": "#banner" },
-    { "name": "Couple", "href": "#couple" },
-    { "name": "story", "href": "#story" },
-    { "name": "People", "href": "#people" },
+    { "name": "A+J", "href": "#couple" },
+    { "name": "Story", "href": "#story" },
     { "name": "Venue", "href": "#venue" },
-    { "name": "Gift", "href": "#gift" },
+    { "name": "Dining", "href": "#dining" },
+    { "name": "Gifts", "href": "#gift" },
     { "name": "Gallery", "href": "#gallery" },
-    { "name": "Blog", "href": "#blog" },
     { "name": "RSVP", "href": "#contact" }
   ],
   "banner": {
@@ -42,20 +41,46 @@
         "src": "slider/snakes.jpg",
         "classes": "bg-v-bottom"
       },
-      {"src": "slider/dogs.jpg"},
-      {"src": "slider/parrots.jpg"}
+      {"src": "slider/butterflies.jpg"},
+      {"src": "slider/rose1.jpg"},
+      {"src": "slider/moose.jpg"},
+      {"src": "slider/manatees.jpg"},
+      {"src": "slider/rose2.jpg"},
+      {"src": "slider/terns.jpg"}
     ]
   },
   "stories": [
     {
-      "title": "How we first met",
+      "title": "How We First Met",
       "date": "2005-08-29",
-      "body": "First day of college at UMBC",
+      "body": "We met while attending classes at the University of Maryland, Baltimore County and became fast friends.  This friendship later blossomed into romance and took us on many adventures.",
       "img": "first_met.jpg",
       "alt": "First day of UMBC"
+    },
+    {
+      "title": "Adventure!",
+      "date": "2017-09-02",
+      "body": "We love to travel together, and enjoy planning roadtrips to explore natural wonders and ride the world's best roller coasters, all at the wheel of our trusty Mini Cooper.",
+      "img": "travel.jpg",
+      "alt": "Travelling"
+    },
+    {
+      "title": "Home Life",
+      "date": "2017-09-02",
+      "body": "At home, we spend most of our time together cooking, gaming, and working on home improvements. Andy puts his love of building and tinkering to work on many projects, such as home automation and the \"catification\" of our home, while Jane endeavors on her pet projects of establishing wildlife-friendly gardens around our home.",
+      "img": "homelife.jpg",
+      "alt": "Home Life"
+    },
+    {
+      "title": "Our Little Family",
+      "date": "2017-09-02",
+      "body": "We share our home with our two cats, three snakes, three tarantulas, and an elderly hissing cockroach. We also foster cats for the Maryland SPCA.",
+      "img": "pets.jpg",
+      "alt": "The Family"
     }
   ],
-  "people": [
+  "people": [],
+  "_people": [
     {
       "name": "Jane Person",
       "role": "Person of Note",
@@ -110,25 +135,23 @@
       "name": "Rawlings Conservatory",
       "img": "conservatory1.jpg",
       "date": "2017-07-14",
-      "desc": "Howard Peters Rawlings Conservatory and Botanic Gardens of Baltimore. Click below for directions.",
+      "desc": "The Howard Peter Rawlings Conservatory and Botanical Gardens opened in Druid Hill Park in 1888 and is one of the oldest Victorian-style conservatories still standing in the United States. <p><em>Click below for directions.</em></p>",
       "href": "https://www.google.com/maps/place/Rawlings+Conservatory/@39.3185704,-76.6479233,17z/data=!3m1!4b1!4m5!3m4!1s0x89c81b33c0e81c41:0x993d3cb5f38f5105!8m2!3d39.3185704!4d-76.6457346",
       "icon": "map-marker"
     },
     {
       "name": "Gardens",
-      "img": "gardens.jpg",
+      "img": "conservatory2.jpg",
       "date": "2017-07-14",
-      "desc": "Featuring the Orchid Room, Palm House, Desert House, Mediterranean House, and Outdoor Gardens",
-      "href": "#",
-      "icon": "globe"
+      "desc": "Our guests will view beautiful living plants from around the world in the Palm House, the Orchid Room, the Mediterranean Garden, the Desert Garden, and the Tropical Garden.",
+      "icon": "leaf"
     },
     {
-      "name": "Outdoor Events",
+      "name": "Outdoor Activities",
       "img": "conservatory3.jpg",
       "date": "2017-07-14",
-      "desc": "Outdoor seating and an outdoor dance floor.",
-      "href": "#",
-      "icon": "glass"
+      "desc": "Tour the classical Rose Garden, featuring a multi-faceted sundial crafted in 1890, and get down with your bad self on a tented outdoor dance-floor.",
+      "icon": "sun-o"
     }
   ],
   "charities": [
@@ -171,14 +194,14 @@
     }
   ],
   "rsvpLink": {
-    "img": "slider/dogs.jpg",
+    "img": "slider/rose1.jpg",
     "desc": "We want you to be there! Don't be late!",
     "contactLink": "#contact",
     "mapLink": "#map"
   },
   "quote": {
-    "img": "slider/parrots.jpg",
-    "quote": "For some people, the point of no return begins at the very <br> moment their souls become aware of each other's existence."
+    "img": "slider/butterflies.jpg",
+    "quote": "There's more to this brave adventure than you'd ever believe&hellip;<span class=\"pull-right\" style=\"margin-right: 50px;\">- Owl City, To The Sky</span>"
   },
   "contact": {
     "venue": "Rawlings Conservatory",
@@ -240,51 +263,69 @@
   "gallery": [
     {
       "title": "Happy Moment",
-      "category": "Engagement",
-      "thumbnail": "gallery/gallery_thumb_01.jpg",
-      "img": "gallery/gallery_image_01.jpg"
+      "category": "Meeting with a bison",
+      "thumbnail": "gallery/2017-05-22.jpg",
+      "img": "gallery/2017-05-22.jpg"
     },
     {
       "title": "Happy Moment",
-      "category": "Engagement",
-      "thumbnail": "gallery/gallery_thumb_02.jpg",
-      "img": "gallery/gallery_image_02.jpg"
+      "category": "JP 4eva!!!",
+      "thumbnail": "gallery/2017-05-23.jpg",
+      "img": "gallery/2017-05-23.jpg"
     },
     {
       "title": "Happy Moment",
-      "category": "Engagement",
-      "thumbnail": "gallery/gallery_thumb_03.jpg",
-      "img": "gallery/gallery_image_03.jpg"
+      "category": "Love birds",
+      "thumbnail": "gallery/2017-05-24.jpg",
+      "img": "gallery/2017-05-24.jpg"
     },
     {
       "title": "Happy Moment",
-      "category": "Engagement",
-      "thumbnail": "gallery/gallery_thumb_04.jpg",
-      "img": "gallery/gallery_image_04.jpg"
+      "category": "Graduation",
+      "thumbnail": "gallery/2017-05-27.jpg",
+      "img": "gallery/2017-05-27.jpg"
     },
     {
       "title": "Happy Moment",
-      "category": "Engagement",
-      "thumbnail": "gallery/gallery_thumb_05.jpg",
-      "img": "gallery/gallery_image_05.jpg"
+      "category": "Young love",
+      "thumbnail": "gallery/2017-05-28.jpg",
+      "img": "gallery/2017-05-28.jpg"
     },
     {
       "title": "Happy Moment",
-      "category": "Engagement",
-      "thumbnail": "gallery/gallery_thumb_06.jpg",
-      "img": "gallery/gallery_image_06.jpg"
+      "category": "Marriage",
+      "thumbnail": "gallery/2017-05-29.jpg",
+      "img": "gallery/2017-05-29.jpg"
     },
     {
       "title": "Happy Moment",
-      "category": "Engagement",
-      "thumbnail": "gallery/gallery_thumb_07.jpg",
-      "img": "gallery/gallery_image_07.jpg"
+      "category": "Snowboarding!",
+      "thumbnail": "gallery/2017-05-34.jpg",
+      "img": "gallery/2017-05-34.jpg"
     },
     {
       "title": "Happy Moment",
-      "category": "Engagement",
-      "thumbnail": "gallery/gallery_thumb_08.jpg",
-      "img": "gallery/gallery_image_08.jpg"
+      "category": "Foggy glasses",
+      "thumbnail": "gallery/2017-05-30.jpg",
+      "img": "gallery/2017-05-30.jpg"
+    },
+    {
+      "title": "Happy Moment",
+      "category": "Luau!",
+      "thumbnail": "gallery/2017-05-31.jpg",
+      "img": "gallery/2017-05-31.jpg"
+    },
+    {
+      "title": "Happy Moment",
+      "category": "Aperture Science",
+      "thumbnail": "gallery/2017-05-32.jpg",
+      "img": "gallery/2017-05-32.jpg"
+    },
+    {
+      "title": "Happy Moment",
+      "category": "Central Park",
+      "thumbnail": "gallery/2017-05-33.jpg",
+      "img": "gallery/2017-05-33.jpg"
     }
   ],
   "honorifics": ["Mr.", "Mrs.", "Ms.", "Mx."]

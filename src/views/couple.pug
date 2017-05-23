@@ -4,7 +4,7 @@ section#couple.couple
       .col-sm-12.text-center
         .heading.wow.animated.fadeInUp
           h3 Happy Couple
-          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet pharetra <br>nunc, non scelerisque ligula. Crasveljusto nulla Vestibuluma.
+          p Please join Andy &amp; Jane as we celebrate our wedding.
     .row
       .col-sm-12.love-bg
         .row
@@ -14,24 +14,24 @@ section#couple.couple
                 img.img-responsive(src=imgpath + groom.img, alt='Groom')
                 h5= groom.name.toUpperCase()
               .thumbnail-detail
-                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Prae sent sit amet pharetra nunc, non scelerisque ligula. Cras vel justo nulla. Vestibulum a sollicitudin ultricies.
-                ul.social-icon
-                  each social in groom.socials
-                    li
-                      a(href=social.href)
-                        i.fa(class='fa-' + social.type)
+                p Andy is a software engineer and hobbyist. He spends his free time building and collecting LEGOs, working on projects around the house, and creating digital music. He also challenges himself in distance running, and travels around the country to ride roller coasters.
+                //- ul.social-icon
+                //-   each social in groom.socials
+                //-     li
+                //-       a(href=social.href)
+                //-         i.fa(class='fa-' + social.type)
           .col-sm-5.col-sm-offset-2
             .thumbnail-block-content.wow.animated.fadeInRight
               .thumb-img-content
                 img.img-responsive(src=imgpath + bride.img, alt='Bride')
                 h5= bride.name.toUpperCase()
               .thumbnail-detail
-                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Prae sent sit amet pharetra nunc, non scelerisque ligula. Cras vel justo nulla. Vestibulum a sollicitudin ultricies.
-                ul.social-icon
-                  each social in bride.socials
-                    li
-                      a(href=social.href)
-                        i.fa(class='fa-' + social.type)
+                p Jane is an artist and animal behavior professional. She is an avid wildlife gardener and loves exploring the natural world. Her favorite pastimes include caring for her plants and animals, taking pictures of bugs, making long lists, and collecting tiny objects. 
+                //- ul.social-icon
+                //-   each social in bride.socials
+                //-     li
+                //-       a(href=social.href)
+                //-         i.fa(class='fa-' + social.type)
     #next-arrow.next-arrow
       a.animated.infinite.rocket(href='#story')
         i.fa.fa-angle-double-down

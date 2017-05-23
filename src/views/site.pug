@@ -13,17 +13,17 @@ html(lang='en')
 		include nav.pug
 		
 		//- Sections
-		include couple.pug
-		include story.pug
 		+aside('rsvpLink', rsvpLink.img)
 			span.rsvpLink-title= rsvpLink.desc
 			a.btn.default-btn(href=rsvpLink.contactLink) RSVP
 			a.btn.default-btn(href=rsvpLink.mapLink) MAP
-		include people.pug
+		include couple.pug
+		include story.pug
 		include events.pug
+		include people.pug
 		include gift.pug
 		include gallery.pug
-		include blog.pug
+		//- include blog.pug
 		+aside('quote', quote.img)
 			blockquote
 				p!= quote.quote
