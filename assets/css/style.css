@@ -58,7 +58,7 @@ body, html {
 }
 h1, h2, h3, h4, h5, h6 {
 	padding-bottom: 5px;
-	color: #d44646;
+	color: #ed0b0b;
 	line-height: normal;
 	font-weight: normal;
 	margin: 0 0 10px;
@@ -90,7 +90,7 @@ h5 small {
 	display: block;
 	font-family: 'PT Sans', sans-serif;
 	font-size: 16px;
-	color: #e1704b;
+	color: #f29a92;
 	line-height: 28px;
 	letter-spacing: 0.025em;
 }
@@ -99,9 +99,9 @@ p {
 	font-weight: 400;
 }
 
-a {color: #d44646}
-a:hover {color: #d44646; text-decoration: none;}
-a:active {color: #d44646;}
+a {color: #ed0b0b}
+a:hover {color: #ed0b0b; text-decoration: none;}
+a:active {color: #ed0b0b;}
 
 ul, li {
 	list-style: none;
@@ -129,8 +129,8 @@ ul, li {
 	border-radius: 0px;
 }
 .default-btn:hover {
-	background: #D44646;
-	border: 1px solid #D44646;
+	background: #ed0b0b;
+	border: 1px solid #ed0b0b;
 }
 .default-btn:hover,
 .default-btn.active,
@@ -252,7 +252,6 @@ ul, li {
 */
 
 .nav-block {
-	/*background: #d44646;*/
   background: #ed0b0b;
 	padding: 20px 0;
 	width: 100%;
@@ -271,7 +270,6 @@ ul, li {
 	padding: 10px 0 10px;
 }
 .nav-block .navbar-default {
-  /*background-color: #d44646;*/
   background-color: #ed0b0b;
   border-color: transparent;
 }
@@ -319,12 +317,12 @@ ul, li {
 	background: #fff;
 }
 .nav-block ul.navbar-nav > li > ul > li a {
-	color: #D44646;
+	color: #ed0b0b;
 	font-size: 14px;
 	padding: 10px 20px;
 }
 .nav-block ul.navbar-nav > li > ul > li a:hover {
-	color: #D44646;
+	color: #ed0b0b;
 }
 .nav-block ul > li a:hover {
 	color: whitesmoke;
@@ -577,7 +575,7 @@ ul, li {
 	color: #fff;
 }
 .thumbnail-detail {
-    background: #e1704b;
+    background: #f29a92;
     padding: 20px 15px;
     color: #fff;
     border-radius: 0 0px 20px 20px;
@@ -688,7 +686,7 @@ ul, li {
 	left: 50%;
 	margin-left: -3px;
 	width: 6px;
-	background: #d44646;
+	background: #ed0b0b;
 }
 .timeline:after {
 	content: "";
@@ -756,7 +754,7 @@ ul, li {
 	height: 0;
 	border-style: solid;
 	border-width: 10.5px 15px 10.5px 0px;
-	border-color: transparent #d44646 transparent transparent;
+	border-color: transparent #ed0b0b transparent transparent;
 }
 .reverse .timeline-block-right:before {
 	content: none;
@@ -770,7 +768,7 @@ ul, li {
 	height: 0;
 	border-style: solid;
 	border-width: 10.5px 0 10.5px 15px;
-	border-color: transparent transparent transparent #d44646;
+	border-color: transparent transparent transparent #ed0b0b;
 }
 .reverse.pull-right {
 	float: left !important;
@@ -793,7 +791,7 @@ ul, li {
 	letter-spacing: 0.025em;
 }
 .timeline-head {
-	background: #d44646;
+	background: #ed0b0b;
 }
 .timeline-head h4 {
 	color: #FFF;
@@ -931,7 +929,7 @@ ul, li {
     width: 106px;
     height: 106px;
     margin-left: -53px;
-    background: #d44646;
+    background: #ed0b0b;
     color: #fff;
     border-radius: 50%;
     text-align: center;
@@ -1051,7 +1049,7 @@ ul, li {
         -ms-transition: .4s ease;
 }
 .item:hover .caption {
- background: rgba(212, 70, 70, 0.7);
+ background: hsla(0, 91%, 47%, 0.7);
 }
 .item:hover img {
  -webkit-transform: scale(1.05);
@@ -1258,7 +1256,7 @@ blockquote:before {
 	float: left;
 	width: 25px;
 	font-size: 30px;
-	color: #d44646;
+	color: #ed0b0b;
 }
 
 .contact-address h4 {
@@ -1299,7 +1297,7 @@ blockquote:before {
 }
 .contact .input-group-btn .btn.btn-default {
   background: #fcfcfc;
-  border-color: #e1704b;
+  border-color: #f29a92;
   color: #000;
 }
 .contact .input-group-btn .btn.btn-default:hover {
@@ -1312,8 +1310,8 @@ blockquote:before {
 .contact .input-group-btn .btn,
 .contact textarea {
 	background: #fcfcfc;
-	/*border: 1px solid #e1704b;*/
-  border-color: #e1704b;
+	/*border: 1px solid #f29a92;*/
+  border-color: #f29a92;
 	padding: 10px 12px;
 	color: #000;
 	height: 45px;
@@ -1342,7 +1340,7 @@ blockquote:before {
 }
 input[type="submit"]:focus, input[type="submit"]:active {
 	outline: none;
-	border: 1px solid #E1704B;
+	border: 1px solid #f29a92;
 }
 .floating-label-form-group {
   margin-top: 24px;
@@ -1382,12 +1380,12 @@ input[type="submit"]:focus, input[type="submit"]:active {
 .contact .btn.active,
 .contact .input-group-btn .btn.active,
 .contact .input-group-btn .btn.active:hover {
-  background-color: #d44646;
+  background-color: #ed0b0b;
   color: #fff;
 }
 .contact label.btn.default-btn:not(.active):hover {
   background-color: #f5ebe8;
-  color: #e1704b;
+  color: #f29a92;
 }
 .contact .bring-guest {
   position: absolute;
@@ -1400,14 +1398,14 @@ input[type="submit"]:focus, input[type="submit"]:active {
 
 .sbHolder {
 	background: none;
-	border: 1px solid #e1704b;
+	border: 1px solid #f29a92;
 	width: 100%;
 	height: 45px;
 }
 .sbOptions {
 	width:  100%;
 	background: #fff;
-	border: 1px solid #e1704b;
+	border: 1px solid #f29a92;
 }
 .sbSelector {
 	width: 90%;
@@ -1416,15 +1414,15 @@ input[type="submit"]:focus, input[type="submit"]:active {
 }
 .sbToggleOpen:focus {
 	outline: none;
-	color: #d44646;
+	color: #ed0b0b;
 }
 .sbToggle:focus {
-	color: #d44646;
+	color: #ed0b0b;
 }
 .contact .default-btn {
     padding: 10px;
-    color: #e1704b;
-    border: 1px solid #e1704b;
+    color: #f29a92;
+    border: 1px solid #f29a92;
     border-radius: 4px;
 }
 .contact .default-btn:hover {
@@ -1512,7 +1510,7 @@ input[type="submit"]:focus, input[type="submit"]:active {
 	bottom: 0px;
 	width: 60px;
 	height: 3px;
-	background: #d44646;
+	background: #ed0b0b;
 }
 .popular-post ul {
 	padding: 0;
@@ -1566,7 +1564,7 @@ input[type="submit"]:focus, input[type="submit"]:active {
 .single-blog-lower {
 	background: #ededed;
 	padding: 50px 30px 60px;
-	border-bottom: 3px solid #d44646;
+	border-bottom: 3px solid #ed0b0b;
 }
 .single-blog-lower h4 {
     font-family: 'PT Sans', sans-serif;
@@ -1585,7 +1583,7 @@ input[type="submit"]:focus, input[type="submit"]:active {
 }
 .single-blog-detail blockquote {
 	position: relative;
-	background: #e1704b;
+	background: #f29a92;
 	font-size: 24px;
 	padding: 35px 30px 30px 100px;
 	margin-bottom: 0;
@@ -1622,7 +1620,7 @@ input[type="submit"]:focus, input[type="submit"]:active {
 .single-post-item li .fa {
 	width: 20px;
 	height: 20px;
-	background: #e1704b;
+	background: #f29a92;
 	border-radius: 50%;
 	color: #fff;
 	text-align: center;
@@ -1725,7 +1723,7 @@ input[type="submit"]:focus, input[type="submit"]:active {
 	margin-bottom: 65px;
 	padding:60px 50px;
 	background:#ededed;
-	border-bottom: 3px solid #D44646;
+	border-bottom: 3px solid #ed0b0b;
 }
 .comment-block > h5, .reply-block h5 {
     font-weight: 700;
@@ -1757,15 +1755,15 @@ ul.media-list + ul .media-object {
 }
 .comment-block .default-btn {
 	float:right;
-	background-color: #e1704b;
+	background-color: #f29a92;
 	padding: 7px 18px;
-	border: 1px solid #e1704b;
+	border: 1px solid #f29a92;
 	border-radius: 3px;
 }
 .comment-block .default-btn:hover {
 	background: #fff;
-	color: #D44646;
-	border:1px solid #D44646;
+	color: #ed0b0b;
+	border:1px solid #ed0b0b;
 }
 .reply-block .default-btn {
 	padding: 15px 46px;
@@ -1781,7 +1779,7 @@ ul.media-list + ul .media-object {
 .reply-block {
 	background: #ededed;
 	padding: 50px;
-	border-bottom: 3px solid #D44646;
+	border-bottom: 3px solid #ed0b0b;
 }
 
 /*
@@ -1836,9 +1834,9 @@ footer a .fa {
             transition: .3s ease;
 }
 footer a .fa:hover {
-    background: #d44646;
+    background: #ed0b0b;
     color: #fff;
-    border-color: #d44646;
+    border-color: #ed0b0b;
 }
 footer .nav {
 	margin-bottom: 45px;
@@ -1900,6 +1898,6 @@ footer .nav {
 
 }
 #go-to-top .fa:hover {
-	border-color: #d44646;
+	border-color: #ed0b0b;
 	color: #fff
 }

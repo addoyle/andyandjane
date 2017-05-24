@@ -3,7 +3,7 @@ function initialize() {
   var styles = [
     {
       stylers: [
-        { hue: "#D44645" },
+        { hue: "#ed0b0b" },
         { saturation: 0 }
       ]
     },

@@ -188,7 +188,13 @@
 	.nav-block .navbar-nav li {
 		text-align: left;
 	}
-    .thumbnail-block, .thumbnail-block-content {
+  .couple {
+    background-position: 50% 55%;
+  }
+  .couple .col-sm-5:last-child {
+    margin-top: 22%;
+  }
+  .thumbnail-block, .thumbnail-block-content {
 		width: 298px;
 		margin: 0 auto;
 		margin-bottom:20px;

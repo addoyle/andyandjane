@@ -47,7 +47,7 @@ Index
 }
 
 .timing .time_circles > div > span[style] {
-        background: #FF6565;
+        background: #ed0b0b;
     color: #FFF;
     border-radius: 20px 20px 0px 0px;
     display: block;
@@ -57,7 +57,7 @@ Index
 
 .timing .time_circles > div > h4[style] {
     padding: 8px 0;
-    background: none repeat scroll 0% 0% rgba(212, 70, 70, 0.3);
+    background: none repeat scroll 0% 0% hsla(0, 91%, 47%, 0.3);
     color: #FFF;
     text-transform: capitalize;
     border-radius: 0px 0px 20px 20px;
@@ -108,7 +108,7 @@ Index
 	font-weight: 700;
     position: absolute;
     bottom: 0px;
-	background: rgba(212, 70, 70, 0.3);
+	background: hsla(0, 91%, 47%, 0.3);
     margin-bottom: 0;
     color: #fff;
     padding: 10px 45px;
@@ -122,10 +122,10 @@ Index
 	height: 0px;
 	border-style: solid;
 	border-width: 45px 38px 0px 10px;
-	border-color: transparent transparent transparent rgba(212, 70, 70, 0.3);
+	border-color: transparent transparent transparent hsla(0, 91%, 47%, 0.3);
 }
 .thumbnail-detail {
-    background: #FF6565;
+    background: #ed0b0b;
     padding: 20px 15px;
     color: #fff;
     border-radius: 0 0px 20px 20px;
@@ -163,7 +163,7 @@ Index
 	height: 100%;
 	position: absolute;
 	left: 33%;
-	background: #D44646;
+	background: #ed0b0b;
 }
 .timeline-block-left {
 	float: left;
@@ -219,7 +219,7 @@ Index
 */
 
 .blog-thumb-hover {
-	border-top: 3px solid #d44646;
+	border-top: 3px solid #ed0b0b;
 	text-align: center;
 	height: auto;
 }
@@ -249,7 +249,7 @@ Index
 }
 .blog-post:hover .blog-link {
 	bottom: 40%;
-	background: #d44646;
+	background: #ed0b0b;
 	color: #fff;
 }
 .love-v-sign {
