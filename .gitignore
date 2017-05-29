@@ -42,3 +42,5 @@ deploy
 
 # Sass cache
 .sass-cache
+
+.DS_Store
