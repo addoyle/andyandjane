@@ -354,6 +354,9 @@ ul, li {
 	margin: 0;
 	padding: 0;
 }
+.nav-logo .nav-brand img {
+  height: 50px;
+}
 .nav-block .navbar-nav > li > a {
 	padding-top: 0px;
 	padding-bottom: 0px;
