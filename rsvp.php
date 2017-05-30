@@ -27,11 +27,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     mail($to, $subject, $message, $headers);
 */
 
-    $json = json_decode(file_get_contents('guests.json'), true);
+    $json = json_decode(file_get_contents('./guests.json'), true);
 
     $json[] = $_POST;
 
-    file_put_contents('guests.json', json_encode($json));
+    file_put_contents('./guests.json', json_encode($json));
 
 } else {
     $redirect_url = $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['SERVER_NAME'];

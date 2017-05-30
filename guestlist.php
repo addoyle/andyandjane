@@ -1,6 +1,6 @@
 <?php
 
-$guests = json_decode(file_get_contents('guests.json'), true);
+$guests = json_decode(file_get_contents('./guests.json'), true);
 
 ?>
 <html><body>
