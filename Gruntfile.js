@@ -71,6 +71,7 @@ module.exports = function(grunt) {
           {
             src: 'guests.json',
             dest: 'deploy/'
+          }
         ]
       }
     }
