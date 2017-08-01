@@ -67,11 +67,11 @@ module.exports = function(grunt) {
           {
             src: '*.php',
             dest: 'deploy/'
-          },
-          {
-            src: 'guests.json',
-            dest: 'deploy/'
           }
+          // ,{
+          //   src: 'guests.json',
+          //   dest: 'deploy/'
+          // }
         ]
       }
     }
