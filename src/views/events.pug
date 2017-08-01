@@ -7,8 +7,9 @@ section#venue.event.white
           p The Rawlings Conservatory opened in Druid Hill Park in 1888 and is one of the oldest Victorian-style conservatories still standing in the United States.  The building includes five main sections, displaying beautiful living plants from around the world: the Palm House, the Orchid Room, the Mediterranean Garden, the Desert Garden, and the Tropical Garden.  Our guests will also enjoy the outdoor Rose Garden, featuring a multi-faceted sundial crafted in 1890, and a tented outdoor dancefloor.
     .row
       .col-sm-8.col-sm-offset-2.text-center
-        a.gallery-popup(href=imgpath + "map.png", title="Map")
-          img(src=imgpath + "map.png", style="width: 100%")
+        .wow.animated.fadeIn
+          a.gallery-popup(href=imgpath + "map.png", title="Map")
+            img(src=imgpath + "map.png", style="width: 100%")
     hr
     .row
       each venue in venues
