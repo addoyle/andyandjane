@@ -269,9 +269,21 @@
     },
     {
       "title": "Happy Moment",
+      "category": "Photo by Laura Weigmann",
+      "thumbnail": "gallery/andyjane1.png",
+      "img": "gallery/andyjane1.png"
+    },
+    {
+      "title": "Happy Moment",
       "category": "JP 4eva!!!",
       "thumbnail": "gallery/2017-05-23.jpg",
       "img": "gallery/2017-05-23.jpg"
+    },
+    {
+      "title": "Happy Moment",
+      "category": "Photo by Laura Weigmann",
+      "thumbnail": "gallery/andyjane2.png",
+      "img": "gallery/andyjane2.png"
     },
     {
       "title": "Happy Moment",
@@ -281,9 +293,21 @@
     },
     {
       "title": "Happy Moment",
+      "category": "Photo by Laura Weigmann",
+      "thumbnail": "gallery/andyjane3.png",
+      "img": "gallery/andyjane3.png"
+    },
+    {
+      "title": "Happy Moment",
       "category": "Graduation",
       "thumbnail": "gallery/2017-05-27.jpg",
       "img": "gallery/2017-05-27.jpg"
+    },
+    {
+      "title": "Happy Moment",
+      "category": "Photo by Laura Weigmann",
+      "thumbnail": "gallery/andyjane4.png",
+      "img": "gallery/andyjane4.png"
     },
     {
       "title": "Happy Moment",
@@ -293,9 +317,21 @@
     },
     {
       "title": "Happy Moment",
+      "category": "Photo by Laura Weigmann",
+      "thumbnail": "gallery/andyjane5.png",
+      "img": "gallery/andyjane5.png"
+    },
+    {
+      "title": "Happy Moment",
       "category": "Marriage",
       "thumbnail": "gallery/2017-05-29.jpg",
       "img": "gallery/2017-05-29.jpg"
+    },
+    {
+      "title": "Happy Moment",
+      "category": "Photo by Laura Weigmann",
+      "thumbnail": "gallery/andyjane9.png",
+      "img": "gallery/andyjane9.png"
     },
     {
       "title": "Happy Moment",
@@ -311,15 +347,33 @@
     },
     {
       "title": "Happy Moment",
+      "category": "Photo by Laura Weigmann",
+      "thumbnail": "gallery/andyjane8.png",
+      "img": "gallery/andyjane8.png"
+    },
+    {
+      "title": "Happy Moment",
       "category": "Luau!",
       "thumbnail": "gallery/2017-05-31.jpg",
       "img": "gallery/2017-05-31.jpg"
     },
     {
       "title": "Happy Moment",
+      "category": "Meeting with a bison",
+      "thumbnail": "gallery/andyjane6.png",
+      "img": "gallery/andyjane6.png"
+    },
+    {
+      "title": "Happy Moment",
       "category": "Aperture Science",
       "thumbnail": "gallery/2017-05-32.jpg",
       "img": "gallery/2017-05-32.jpg"
+    },
+    {
+      "title": "Happy Moment",
+      "category": "Tribble and our rings",
+      "thumbnail": "gallery/rings.jpg",
+      "img": "gallery/rings.jpg"
     },
     {
       "title": "Happy Moment",
