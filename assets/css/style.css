@@ -255,7 +255,7 @@ ul, li {
   background: #ed0b0b;
 	padding: 20px 0;
 	width: 100%;
-	z-index: 1000;
+	z-index: 999;
   position: relative;
 	-webkit-transition: .3s ease;
 	   -moz-transition: .3s ease;
