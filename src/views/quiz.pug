@@ -1,0 +1,67 @@
+doctype html
+
+include mixins.pug
+
+html(lang='en')
+  head
+    include meta.pug
+  body
+    //- Header
+    include navfixed.pug
+    
+    section.blog-bg
+      .color-overlay
+        .container
+          .row
+            .col-sm-12.text-center
+              .blog-title
+                h3 Andy &amp; Jane Trivia
+                p First person to answer all the questions correctly wins the 
+                  a(href="#") Socialite
+                  | &nbsp;prize basket!
+      
+    section.blog-content
+      .container
+        .row
+          ol.questions
+            li
+              p Here's a question
+            li
+              p Here's a question
+            li
+              p Here's a question
+            li
+              p Here's a question
+            li
+              p Here's a question
+            li
+              p Here's a question
+            li
+              p Here's a question
+            li
+              p Here's a question
+            li
+              p Here's a question
+            li
+              p Here's a question
+            li
+              p Here's a question
+            li
+              p Here's a question
+            li
+              p Here's a question
+            li
+              p Here's a question
+            li
+              p Here's a question
+            li
+              p Here's a question
+    
+    //- Footer
+    include footer.pug
+
+    //- Scripts
+    // bower:js
+    // endbower
+    each script in scripts
+      script(src=(script.indexOf('http') == 0 ? '' : '/assets/js/') + script)

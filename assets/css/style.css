@@ -36,6 +36,7 @@ Index
 # - 14.0 - Blog post section styles
 # - 15.0 - Single bolg post section styles
 # - 16.0 - Footer section styles
+# - 17.0 - Quiz section styles
 
 
 */
@@ -256,7 +257,7 @@ ul, li {
 	padding: 20px 0;
 	width: 100%;
 	z-index: 999;
-  position: relative;
+  /*position: relative;*/
 	-webkit-transition: .3s ease;
 	   -moz-transition: .3s ease;
 	    -ms-transition: .3s ease;
@@ -1480,7 +1481,7 @@ input[type="submit"]:focus, input[type="submit"]:active {
 */
 
 .blog-bg {
-	background: url(/assets/images/bg/banner_bg.jpg) no-repeat fixed center top;
+	/*background: url(/assets/images/bg/banner_bg.jpg) no-repeat fixed center top;*/
 	color: #fff;
 	margin-top: 68px;
 }
@@ -1903,4 +1904,27 @@ footer .nav {
 #go-to-top .fa:hover {
 	border-color: #ed0b0b;
 	color: #fff
+}
+
+/*
+========================================================================
+# 17.0 - Quiz section styles
+------------------------------------------------------------------------
+*/
+ol.questions {
+  counter-reset: questions;
+}
+ol.questions li {
+  position: relative;
+  padding-left: 70px;
+}
+ol.questions li:before {
+  content: counter(questions);
+  counter-increment: questions;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font: bold 50px/1 'Lobster', cursive;
+  width: 55px;
+  text-align: right;
 }

@@ -15,6 +15,8 @@ var site = (function(site) {
   return site;
 })(require('./src/site.json'));
 
+var quiz = require('./src/quiz.json');
+
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -25,6 +27,14 @@ module.exports = function(grunt) {
         },
         files: {
           'deploy/index.html': ['src/views/site.pug']
+        }
+      },
+      quiz: {
+        options: {
+          data: quiz
+        },
+        files: {
+          'deploy/quiz.html': ['src/views/quiz.pug']
         }
       }
     },
@@ -42,7 +52,7 @@ module.exports = function(grunt) {
     },
     wiredep: {
       deploy: {
-        src: [ 'deploy/index.html' ],
+        src: [ 'deploy/index.html', 'deploy/quiz.html' ],
         overrides: {
           jquery: { main: ['dist/jquery.min.js'] },
           bootstrap: { main: ['dist/css/bootstrap.min.css', 'dist/js/bootstrap.min.js'] },
@@ -82,5 +92,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-sass');
 
-  grunt.registerTask('default', ['pug', 'sass', 'wiredep', 'copy']);
+  grunt.registerTask('default', ['pug', 'wiredep', 'copy']);
 };

@@ -1,0 +1,72 @@
+{
+  "`questions": [
+    {
+      "q": "What are the names of Andy and Jane's tarantulas?",
+      "a": [
+        "Jeepers, Tribble, and Bubblegum",
+        "Peepers, Dewey, and Tickles",
+        "Gumball, Jinkies, and Bugsy",
+        "Bubbles, Creepers, and Trouble"
+      ],
+      "layout": "block"
+    },
+    {
+      "q": "How old are Andy and Jane?",
+      "a": [
+        "30",
+        "28",
+        "26",
+        "32"
+      ],
+      "layout": "inline"
+    },
+    {
+      "q": "What kind of house do Andy and Jane live in?",
+      "a": [
+        "Stone",
+        "Brick",
+        "Stucco",
+        "a nasty shack"
+      ],
+      "layout": "grid"
+    }
+  ],
+  "imgpath": "/assets/images/",
+  "title": "Trivia | Andy & Jane's Wedding",
+  "styles": [
+    "style.css",
+    "custom-style.css",
+    "responsive.css",
+    "http://fonts.googleapis.com/css?family=PT+Sans:400,700|Lobster"
+  ],
+  "scripts": [
+    "https://maps.googleapis.com/maps/api/js?key=AIzaSyCIx7mdh1kUmga7xksy_mOpBdTPUI1SteU",
+    "script.js",
+    "maps.js"
+  ],
+  "icons": {
+    "favicon": "icon/favicon/favicon.ico",
+    "appleTouch": "icon/favicon/apple-touch-icon.png",
+    "appleTouch72": "icon/favicon/apple-touch-icon-72x72.png",
+    "appleTouch114": "icon/favicon/apple-touch-icon-114x114.png"
+  },
+  "navs": [
+    { "name": "Home", "href": "/#banner" },
+    { "name": "A+J", "href": "/#couple" },
+    { "name": "Story", "href": "/#story" },
+    { "name": "Venue", "href": "/#venue" },
+    { "name": "Dining", "href": "/#dining" },
+    { "name": "Gifts", "href": "/#gift" },
+    { "name": "Gallery", "href": "/#gallery" },
+    { "name": "RSVP", "href": "/#contact" }
+  ],
+  "footer": {
+    "img": "slider/snakes.jpg",
+    "navs": [
+      { "name": "Home", "href": "#banner" },
+      { "name": "Gallery", "href": "#gallery" },
+      { "name": "Venue", "href": "#venue" },
+      { "name": "RSVP", "href": "#contact" }
+    ]
+  }
+}
