@@ -16,6 +16,7 @@ html(lang='en')
             .col-sm-12.text-center
               .blog-title
                 h3 Andy &amp; Jane Trivia
+                p How well do you know Andy &amp; Jane?
                 p First person to answer all the questions correctly wins the 
                   a(href="#") Socialite
                   | &nbsp;prize basket!
@@ -23,39 +24,62 @@ html(lang='en')
     section.blog-content
       .container
         .row
-          ol.questions
-            li
-              p Here's a question
-            li
-              p Here's a question
-            li
-              p Here's a question
-            li
-              p Here's a question
-            li
-              p Here's a question
-            li
-              p Here's a question
-            li
-              p Here's a question
-            li
-              p Here's a question
-            li
-              p Here's a question
-            li
-              p Here's a question
-            li
-              p Here's a question
-            li
-              p Here's a question
-            li
-              p Here's a question
-            li
-              p Here's a question
-            li
-              p Here's a question
-            li
-              p Here's a question
+          form(action='submitquiz.php', method='post')
+            .col-sm-12.quiz-person-name
+              h4 About You
+              .form-group.floating-label-form-group
+                .input-group
+                  input.form-control#name(name='name', required='required', placeholder='John Doe')  
+                  label Your Name
+            
+            .col-sm-12
+              h4 The Quiz
+              ol.questions
+                li
+                  .question Here's a question
+                  .answers.block
+                    label.answer
+                      input(type='radio', name='q1', value='0').quiz-form-control
+                      div Answer 1
+                    label.answer
+                      input(type='radio', name='q1', value='1').quiz-form-control
+                      div Answer 2
+                    label.answer
+                      input(type='radio', name='q1', value='2').quiz-form-control
+                      div Answer 3
+                    label.answer
+                      input(type='radio', name='q1', value='3').quiz-form-control
+                      div Answer 4
+                li
+                  .question Here's another question
+                  .answers.inline
+                    label.answer
+                      input(type='radio', name='q2', value='0').quiz-form-control
+                      div 10
+                    label.answer
+                      input(type='radio', name='q2', value='1').quiz-form-control
+                      div 20
+                    label.answer
+                      input(type='radio', name='q2', value='2').quiz-form-control
+                      div 30
+                    label.answer
+                      input(type='radio', name='q2', value='3').quiz-form-control
+                      div 40
+                li
+                  .question Here's another question
+                  .answers.grid
+                    label.answer
+                      input(type='radio', name='q3', value='0').quiz-form-control
+                      div red
+                    label.answer
+                      input(type='radio', name='q3', value='1').quiz-form-control
+                      div blue
+                    label.answer
+                      input(type='radio', name='q3', value='2').quiz-form-control
+                      div green
+                    label.answer
+                      input(type='radio', name='q3', value='3').quiz-form-control
+                      div red
     
     //- Footer
     include footer.pug
@@ -65,3 +89,8 @@ html(lang='en')
     // endbower
     each script in scripts
       script(src=(script.indexOf('http') == 0 ? '' : '/assets/js/') + script)
+
+    //script.
+      window.onbeforeunload = function() {
+        return true;
+      };
