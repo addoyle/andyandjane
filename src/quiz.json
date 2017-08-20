@@ -1,7 +1,7 @@
 {
-  "`questions": [
+  "questions": [
     {
-      "q": "What are the names of Andy and Jane's tarantulas?",
+      "q": "What are the names of Andy and Jane&rsquo;s tarantulas?",
       "a": [
         "Jeepers, Tribble, and Bubblegum",
         "Peepers, Dewey, and Tickles",
@@ -28,7 +28,130 @@
         "Stucco",
         "a nasty shack"
       ],
-      "layout": "grid"
+      "layout": "block"
+    },
+    {
+      "q": "Where and Andy and Jane meet?",
+      "a": [
+        "College",
+        "Friend's birthday party",
+        "Work",
+        "Road trip with mutual friends"
+      ],
+      "layout": "block"
+    },
+    {
+      "q": "How long have Andy and Jane been together (in years)?",
+      "a": [
+        "11",
+        "6",
+        "7",
+        "10"
+      ],
+      "layout": "inline"
+    },
+    {
+      "q": "What was Andy's first car?",
+      "a": [
+        "Plymouth Neon",
+        "Mini Cooper",
+        "Honda Accord",
+        "Buick LeSabre",
+        "Volvo 240"
+      ],
+      "layout": "block"
+    },
+    {
+      "q": "Where did Andy and Jane get married?",
+      "a": [
+        "Courthouse",
+        "At home",
+        "Conservatory",
+        "Common-law marriage"
+      ],
+      "layout": "block"
+    },
+    {
+      "q": "What is the name of this venue?",
+      "a": [
+        "The Howard Peter Rawlings Conservatory and Botanic Gardens",
+        "The Historic Druid Hill Park Conservatory and Botanic Gardens",
+        "The William Donald Schaefer Conservatory and Botanic Gardens",
+        "The Harry and Jeanette Weinberg Conservatory and Botanic Gardens"
+      ],
+      "layout": "block"
+    },
+    {
+      "q": "What is the name of the couple&rsquo;s special dance?",
+      "a": [
+        "To the Sky",
+        "Alligator Sky",
+        "Light Up the Sky",
+        "Weasel-Stomping Day"
+      ],
+      "layout": "block"
+    },
+    {
+      "q": "Instead of an engagement ring, Jane got a tattoo of&hellip;",
+      "a": [
+        "Bird",
+        "Music notes",
+        "Ring",
+        "Rose"
+      ],
+      "layout": "block"
+    },
+    {
+      "q": "Andy and Jane&rsquo;s wedding rings are&hellip;",
+      "a": [
+        "Rose gold and titanium",
+        "Peach gold and platinum",
+        "Reclaimed steel and copper",
+        "Silver and gold colored Silicone",
+        "Andy and Jane don't have wedding rings"
+      ],
+      "layout": "block"
+    },
+    {
+      "q": "What are the names of the two snakes in Andy and Jane&rsquo;s &ldquo;Save the Date&rdquo; photo?",
+      "a": [
+        "Genghis and Kublai",
+        "Nag and Nagaina",
+        "Ekans and Arbok",
+        "President Snake and Dr. Hiss",
+        "Noodle and Kinky"
+      ],
+      "layout": "block"
+    },
+    {
+      "q": "Who said &lsquo;I love you&rsquo; first?",
+      "a": [
+        "Andy",
+        "Jane",
+        "Same time",
+        "We still haven&rsquo;t said it to each other!"
+      ],
+      "layout": "block"
+    },
+    {
+      "q": "When was Andy and Jane&rsquo;s first kiss?",
+      "a": [
+        "First day of school",
+        "Their first date",
+        "At a party with friends",
+        "New Years"
+      ],
+      "layout": "block"
+    },
+    {
+      "q": "What is the anniversary of Andy and Jane&rsquo;s first date?",
+      "a": [
+        "January 14, 2006",
+        "December 28, 2005",
+        "February 2, 2006",
+        "They can&rsquo;t remember"
+      ],
+      "layout": "block"
     }
   ],
   "imgpath": "/assets/images/",

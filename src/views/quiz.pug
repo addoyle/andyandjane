@@ -34,52 +34,10 @@ html(lang='en')
             
             .col-sm-12
               h4 The Quiz
-              ol.questions
-                li
-                  .question Here's a question
-                  .answers.block
-                    label.answer
-                      input(type='radio', name='q1', value='0').quiz-form-control
-                      div Answer 1
-                    label.answer
-                      input(type='radio', name='q1', value='1').quiz-form-control
-                      div Answer 2
-                    label.answer
-                      input(type='radio', name='q1', value='2').quiz-form-control
-                      div Answer 3
-                    label.answer
-                      input(type='radio', name='q1', value='3').quiz-form-control
-                      div Answer 4
-                li
-                  .question Here's another question
-                  .answers.inline
-                    label.answer
-                      input(type='radio', name='q2', value='0').quiz-form-control
-                      div 10
-                    label.answer
-                      input(type='radio', name='q2', value='1').quiz-form-control
-                      div 20
-                    label.answer
-                      input(type='radio', name='q2', value='2').quiz-form-control
-                      div 30
-                    label.answer
-                      input(type='radio', name='q2', value='3').quiz-form-control
-                      div 40
-                li
-                  .question Here's another question
-                  .answers.grid
-                    label.answer
-                      input(type='radio', name='q3', value='0').quiz-form-control
-                      div red
-                    label.answer
-                      input(type='radio', name='q3', value='1').quiz-form-control
-                      div blue
-                    label.answer
-                      input(type='radio', name='q3', value='2').quiz-form-control
-                      div green
-                    label.answer
-                      input(type='radio', name='q3', value='3').quiz-form-control
-                      div red
+              ol.questions#questions
+            
+            .col-sm-12
+              button.btn.default-btn.submit-btn.pull-right Submit
     
     //- Footer
     include footer.pug
@@ -89,8 +47,74 @@ html(lang='en')
     // endbower
     each script in scripts
       script(src=(script.indexOf('http') == 0 ? '' : '/assets/js/') + script)
+      
 
-    //script.
-      window.onbeforeunload = function() {
-        return true;
+    script.
+      var questions = !{JSON.stringify(questions)};
+      var shuffle = function(arr) {
+        var m = arr.length, t, i;
+        
+        while (m) {
+          i = Math.floor(Math.random() * m--);
+          
+          t = arr[m];
+          arr[m] = arr[i];
+          arr[i] = t;
+        }
+        
+        return arr;
+      }
+      
+      $.fn.randomize = function(childElem) {
+        function shuffle(o) {
+          for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i--), x = o[i], o[i] = o[j], o[j] = x);
+          return o;
+        };
+        return this.each(function() {
+          var $this = $(this);
+          var elems = $this.children(childElem);
+
+          shuffle(elems);
+
+          $this.detach(childElem);
+
+          elems.each(function(i, elem) {
+            $this.append(elem);
+          });
+        });
       };
+      
+      $(function() {
+        var $questions = $('#questions');
+        
+        questions.forEach(function(question, n) {
+          var $li = $('<li>').appendTo($questions);
+          $('<div>').addClass('question').html(question.q).appendTo($li);
+          
+          var $answers = $('<div>')
+            .addClass('answers')
+            .addClass(question.layout)
+            .appendTo($li);
+            
+          question.a.forEach(function(answer, i) {
+            var $a = $('<label>').addClass('answer').appendTo($answers);
+            
+            $('<input>')
+              .attr('type', 'radio')
+              .attr('name', 'q' + n)
+              .attr('value', i)
+              .addClass('quiz-form-control')
+              .appendTo($a);
+            
+            $('<div>').html(answer).appendTo($a);
+          });
+          
+          $answers.randomize('label');
+        });
+        
+        $questions.randomize('li');
+      });
+    
+      //window.onbeforeunload = function() {
+      //  return true;
+      //};

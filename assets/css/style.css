@@ -2003,3 +2003,12 @@ ol.questions li:before {
 .questions .answers.grid .answer:nth-child(-n+2) div {
   border-top-width: 1px;
 }
+.blog-content .default-btn {
+    padding: 10px;
+    color: #f29a92;
+    border: 1px solid #f29a92;
+    border-radius: 4px;
+}
+.blog-content .default-btn:hover {
+    color: #fff;
+}
