@@ -159,7 +159,7 @@
 		padding: 15px 12px;
 	}
 	.event .col-md-4:last-child .event-block {
-		margin-top: 80px;
+		/*margin-top: 80px;*/
 	}
 }
 
@@ -381,6 +381,12 @@
 	.timing .time_circles > div {
 		display: block;
 	}
+  .games .col-md-4,
+  .games .col-md-6 {
+    display: block;
+    vertical-align: inherit;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 620px) {
 	.timing .time_circles > div > h4 {

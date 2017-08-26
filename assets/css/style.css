@@ -2013,3 +2013,34 @@ ol.questions li:before {
 .blog-content .default-btn:hover {
     color: #fff;
 }
+
+/*
+========================================================================
+# 14- Games section
+------------------------------------------------------------------------
+*/
+
+.games {
+   padding: 100px 0;
+}
+.games .default-btn {
+  border: 1px solid #ed0b0b;
+  color: #ed0b0b;
+  display: block;
+  margin-bottom: 20px;
+  padding: 12px;
+}
+.games .default-btn:hover {
+  color: #fff;
+}
+.games .event-body {
+  padding-bottom: 35px;
+}
+.games .col-md-4,
+.games .col-md-6 {
+  display: inline-block;
+  vertical-align: top;
+  float: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

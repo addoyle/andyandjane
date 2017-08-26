@@ -3,38 +3,39 @@ doctype html
 include mixins.pug
 
 html(lang='en')
-	head
-		include meta.pug
-	body
-		include preloader.pug
-		
-		//- Header
-		include banner.pug
-		include nav.pug
-		
-		//- Sections
-		//- +aside('rsvpLink', rsvpLink.img)
-			span.rsvpLink-title= rsvpLink.desc
-			a.btn.default-btn(href=rsvpLink.contactLink) RSVP
-			a.btn.default-btn(href=rsvpLink.mapLink) MAP
-		include couple.pug
-		include story.pug
-		include events.pug
-		include people.pug
-		include gift.pug
-		include gallery.pug
-		//- include blog.pug
-		+aside('quote', quote.img)
-			blockquote
-				p!= quote.quote
-		include contact.pug
-		include map.pug
-		
-		//- Footer
-		include footer.pug
+  head
+    include meta.pug
+  body
+    include preloader.pug
+    
+    //- Header
+    include banner.pug
+    include nav.pug
+    
+    //- Sections
+    //- +aside('rsvpLink', rsvpLink.img)
+      span.rsvpLink-title= rsvpLink.desc
+      a.btn.default-btn(href=rsvpLink.contactLink) RSVP
+      a.btn.default-btn(href=rsvpLink.mapLink) MAP
+    include couple.pug
+    include story.pug
+    include events.pug
+    include dining.pug
+    //- include people.pug
+    include gallery.pug
+    //- include blog.pug
+    +aside('quote', quote.img)
+      blockquote
+        p!= quote.quote
+    //- include contact.pug
+    include games.pug
+    include map.pug
+    
+    //- Footer
+    include footer.pug
 
-		//- Scripts
-		// bower:js
-		// endbower
-		each script in scripts
-			script(src=(script.indexOf('http') == 0 ? '' : '/assets/js/') + script)
+    //- Scripts
+    // bower:js
+    // endbower
+    each script in scripts
+      script(src=(script.indexOf('http') == 0 ? '' : '/assets/js/') + script)

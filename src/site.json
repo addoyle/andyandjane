@@ -33,7 +33,7 @@
     { "name": "Dining", "href": "#dining" },
     { "name": "Gifts", "href": "#gift" },
     { "name": "Gallery", "href": "#gallery" },
-    { "name": "RSVP", "href": "#contact" }
+    { "name": "Games", "href": "#games" }
   ],
   "banner": {
     "carousel": [
@@ -79,8 +79,7 @@
       "alt": "The Family"
     }
   ],
-  "people": [],
-  "_people": [
+  "people": [
     {
       "name": "Jane Person",
       "role": "Person of Note",
@@ -219,13 +218,73 @@
       "email": "gingingray@yahoo.com"
     }
   },
+  "games": [
+    {
+      "name": "Guest the LEGO blocks in the jar!",
+      "desc": "How many LEGO blocks are in that jar? The closest guess without going over, wins!",
+      "img": "engineer.jpg",
+      "activity": "Guess the number!",
+      "href": "/jar.html",
+      "prize": "The Engineer",
+      "prizeDescription": "The Engineer gift basket is full of tools and trinkets to inspire you to build and tinker! Try your hand at a new project (or maybe patch up an old one) with the items in this basket!"
+    },
+    {
+      "name": "Andy and Jane Trivia Quiz!",
+      "desc": "How well do you know Andy & Jane? First guest to get 100% wins! If no one gets 100%, the first person to get the highest score wins!",
+      "img": "socialite.jpg",
+      "activity": "Take the Trivia Quiz!",
+      "href": "/quiz.html",
+      "prize": "The Socialite",
+      "prizeDescription": "The Socialite gift basket is perfect for entertaining and making those special connections. The items in this basket will help you put together the perfect evening with friends or a lucky somebody."
+    },
+    {
+      "name": "Vote for the best RSVP!",
+      "desc": "Which invitation is the best? Highest number of votes wins!",
+      "img": "creative.jpg",
+      "activity": "Vote for the best RSVP!",
+      "href": "/vote.html",
+      "prize": "The Creative",
+      "prizeDescription": "The Creative gift basket is full of items to overcome your artist's block and get your creative juices flowing! Whether you are just doodling to relax or working on your next great masterpiece, Andy and I hope this gift basket will give you the tools and inspiration to fuel your artistic spirit!"
+    },
+    {
+      "name": "Find the Golden Rose!",
+      "desc": "A golden rose hidden somewhere in the Conservatory. <strong>Find the golden rose and give it to Jane to win the prize!</strong>",
+      "img": "nature.jpg",
+      "prize": "The Nature Nurturer",
+      "prizeDescription": "The Nature Nurturer gift basket is here to help create a backyard or balcony wildlife habitat! Exercise your green thumb and get closer to nature with the items in this basket!"
+    },
+    {
+      "name": "Digital Photo Scavenger Hunt!",
+      "desc": "Can you take a photo of everything in the list? First person to take all the photos, wins! <strong>Show your photos to Jane for judging.</strong><br><button class=\"btn btn-link\" data-toggle=\"modal\" data-target=\"#photo\">Click here to see the list!</button>",
+      "img": "adventure.jpg",
+      "prize": "The Adventurer",
+      "prizeDescription": "The Adventurer gift basket is ready to support you on your most daring expeditions. The items in this basket are perfect for enjoying the great outdoors and dealing with everything Mother Nature throws at you!"
+    }
+  ],
+  "scavenger": [
+    "a living animal (non-human)",
+    "people dancing",
+    "a spiky plant",
+    "a rose",
+    "a LEGO minifigure",
+    "a strange-looking flower",
+    "a plant with spots",
+    "a leaf larger than your hand (with your hand for scale)",
+    "a fruit or nut growing on a plant",
+    "your face after eating something tasty",
+    "a heart",
+    "a selfie with someone you haven't met before",
+    "people clinking glasses",
+    "a plant that is taller than you",
+    "a group photo"
+  ],
   "footer": {
     "img": "slider/snakes.jpg",
     "navs": [
       { "name": "Home", "href": "#banner" },
       { "name": "Gallery", "href": "#gallery" },
       { "name": "Venue", "href": "#venue" },
-      { "name": "RSVP", "href": "#contact" }
+      { "name": "Games", "href": "#games" }
     ]
   },
   "socials": [

@@ -1,0 +1,58 @@
+//-section#games.games
+  .container
+    .row
+      .col-sm-12.text-center
+        .heading.wow.animated.fadeInUp
+          h3 Games
+          p Win some fabulous prizes!
+    .row
+      .col-sm-4.text-center
+        .heading
+          h4 Find the Golden Rose!
+          p A golden rose hidden somewhere in the Conservatory. Find the golden rose and give it to Jane to win the prize!
+          .panel.panel-danger
+            .panel-heading
+              strong Prize:&nbsp;
+              | The Nature Nurturer
+            .panel-body
+              p This portable gardening bag contains supplies for the budding gardener, including field guides, seeds, tools, and more!
+      .col-sm-6.col-sm-offset-3        
+        a.btn.default-btn(href='/quiz.html') Take the Trivia Quiz!
+        a.btn.default-btn(href='/vote.html') Vote for the best RSVP!
+        a.btn.default-btn(href='/jar.html')  How many legos?
+      
+section#games.games.white
+  .container
+    .row
+      .col-sm-12.text-center
+        .heading.wow.animated.fadeInUp
+          h3 Games
+          p Win some fabulous prizes!
+    .row
+      each game in games
+        .col-sm-6.col-md-4
+          .event-block.wow.animated.fadeInUp(data-wow-delay='.6s', data-wow-duration='1s')
+            .event-img
+              img.img-responsive(src=imgpath + 'games/' + game.img, alt=game.name)
+            .event-body
+              h5 !{game.name.toUpperCase()}
+              p !{game.desc}
+              h5 PRIZE
+              h6 &ldquo;!{game.prize.toUpperCase()}&rdquo;
+              p !{game.prizeDescription}
+              if game.href
+                a.btn.default-btn(href=game.href, title=game.activity) !{game.activity}
+  .modal.fade#photo(tabindex=-1, role='dialog')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          button.close(type='button', data-dismiss='modal')
+            span &times;
+          h4 Take a photo of&hellip;
+        .modal-body
+          ul
+            each item in scavenger
+              li 
+                label
+                  input(type='checkbox')
+                  span &nbsp;#{item}
