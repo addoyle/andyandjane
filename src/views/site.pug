@@ -17,6 +17,7 @@ html(lang='en')
       span.rsvpLink-title= rsvpLink.desc
       a.btn.default-btn(href=rsvpLink.contactLink) RSVP
       a.btn.default-btn(href=rsvpLink.mapLink) MAP
+    include games.pug
     include couple.pug
     include story.pug
     include events.pug
@@ -28,7 +29,7 @@ html(lang='en')
       blockquote
         p!= quote.quote
     //- include contact.pug
-    include games.pug
+    
     include map.pug
     
     //- Footer

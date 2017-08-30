@@ -27,13 +27,13 @@
   },
   "navs": [
     { "name": "Home", "href": "#banner" },
+    { "name": "Games", "href": "#games" },
     { "name": "A+J", "href": "#couple" },
     { "name": "Story", "href": "#story" },
     { "name": "Venue", "href": "#venue" },
     { "name": "Dining", "href": "#dining" },
     { "name": "Gifts", "href": "#gift" },
-    { "name": "Gallery", "href": "#gallery" },
-    { "name": "Games", "href": "#games" }
+    { "name": "Gallery", "href": "#gallery" }
   ],
   "banner": {
     "carousel": [
@@ -220,7 +220,7 @@
   },
   "games": [
     {
-      "name": "Guest the LEGO blocks in the jar!",
+      "name": "Guess the LEGO blocks in the jar!",
       "desc": "How many LEGO blocks are in that jar? The closest guess without going over, wins!",
       "img": "engineer.jpg",
       "activity": "Guess the number!",

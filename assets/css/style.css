@@ -2025,13 +2025,15 @@ ol.questions li:before {
 }
 .games .default-btn {
   border: 1px solid #ed0b0b;
-  color: #ed0b0b;
+  background-color: #ed0b0b;
+  color: #fff;
   display: block;
   margin-bottom: 20px;
   padding: 12px;
 }
 .games .default-btn:hover {
-  color: #fff;
+  color: #ed0b0b;
+  background-color: transparent;
 }
 .games .event-body {
   padding-bottom: 35px;
