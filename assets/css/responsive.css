@@ -191,9 +191,6 @@
   .couple {
     background-position: 50% 55%;
   }
-  .couple .col-sm-5:last-child {
-    margin-top: 22%;
-  }
   .thumbnail-block, .thumbnail-block-content {
 		width: 298px;
 		margin: 0 auto;
@@ -381,14 +378,11 @@
 	.timing .time_circles > div {
 		display: block;
 	}
-  .games .col-md-4,
-  .games .col-md-6 {
-    display: block;
-    vertical-align: inherit;
-    margin: 0 auto;
-  }
 }
 @media screen and (max-width: 620px) {
+  .couple .col-sm-5:last-child {
+    margin-top: 22%;
+  }
 	.timing .time_circles > div > h4 {
 	  font-size: 18px!important;
 	  display: inline-block;
@@ -442,6 +436,12 @@
 	.col-sm-4:last-child .gift-block {
 	  margin-bottom: 0px;
 	 }
+   .games .col-md-4,
+   .games .col-sm-6 {
+     display: block;
+     vertical-align: inherit;
+     margin: 0 auto;
+   }
 }
 @media screen and (max-width: 480px) {
 	.banner-logo {
